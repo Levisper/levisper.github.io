@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>如何提交博客到hexo |  飘</title>
+      <title>Hexo+GitHub博客搭建教程 |  飘</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -51,7 +51,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-如何提交博客到hexo"
+  id="post-Hexo-GitHub博客搭建教程"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -62,7 +62,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  如何提交博客到hexo
+  Hexo+GitHub博客搭建教程
 </h1>
  
 
@@ -70,8 +70,8 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/" class="article-date">
-  <time datetime="2021-06-25T04:19:20.000Z" itemprop="datePublished">2021-06-25</time>
+      <a href="/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="article-date">
+  <time datetime="2021-06-27T13:34:52.000Z" itemprop="datePublished">2021-06-27</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
@@ -82,7 +82,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">262</span>
+            <span class="post-count">1.1k</span>
         </span>
     </span>
 
@@ -91,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -106,38 +106,88 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Hello！大家好，这是我的第一条<a target="_blank" rel="noopener" href="https://levisper.github.io/">博客</a>，后续会定期更新各类教程等优质文章在博客里。欢迎大家关注我的博客，也欢迎加入<a target="_blank" rel="noopener" href="https://t.me/opensource_community">开源社区</a>和<a target="_blank" rel="noopener" href="https://t.me/opencfdchannel">开源频道</a>，更多有趣的小伙伴在等着你哦！</p>
-<p>基于是初次搭建博客，本文将讲述如何提交博客到<em><strong>hexo</strong></em>以及删除已经发布的文章。</p>
-<blockquote>
-<p>注：本文使用的是cmder软件进行命令操作</p>
+  <p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。搭建大致分为三个流程：准备工作、安装Hexo、部署在GitHub，下面开始介绍详细流程。</p>
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、下载Node-js，并进行安装（详见注意事项）"><a href="#1、下载Node-js，并进行安装（详见注意事项）" class="headerlink" title="1、下载Node.js，并进行安装（详见注意事项）"></a>1、下载<a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a>，并进行安装（<strong>详见注意事项</strong>）</h5><blockquote>
+<p>a.选择windows安装包.msi下载</p>
+<p>b.安装过程默认C盘，中间切记要选择Add to PATH，然后点Next继续</p>
+</blockquote>
+<h5 id="2、下载Git，并进行安装"><a href="#2、下载Git，并进行安装" class="headerlink" title="2、下载Git，并进行安装"></a>2、下载<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>，并进行安装</h5><blockquote>
+<p>可自行选择安装路径，后面的安装步骤只要全部点击Next即可，无需自行配置</p>
+</blockquote>
+<h5 id="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"><a href="#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行" class="headerlink" title="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"></a>3、下载<a target="_blank" rel="noopener" href="https://cmder.net/">Cmder</a>，并进行安装，后文所涉及到命令均是在Cmder里面进行运行</h5><blockquote>
+<p>下载选择Full版本</p>
 </blockquote>
 <span id="more"></span>
 
 <hr>
-<h4 id="基础步骤如下"><a href="#基础步骤如下" class="headerlink" title="基础步骤如下"></a>基础步骤如下</h4><ul>
-<li>进入到博客文件的根目录下：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd D:\Blog\heko</span><br><span class="line">hexo new &#x27;如何提交博客到hexo&#x27;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/06/26/MQCrBoNe3swKYEc.jpg" alt="创建md文件.jpg"></p>
-<ul>
-<li><p>右键打开方式，选择<strong>Typora</strong>打开,进行编辑；</p>
-<p><img src="https://i.loli.net/2021/06/26/GsaMuqUHeF1ld9X.jpg" alt="找到根目录下的md文件.jpg"></p>
+<h4 id="二：安装Hexo"><a href="#二：安装Hexo" class="headerlink" title="二：安装Hexo"></a>二：安装Hexo</h4><ul>
+<li><p>打开Cmder面板，分别输入以下命令（检测软件配置是否安装成功）</p>
+<blockquote>
+<p>输出了版本号，那么证明配置成功</p>
+<p>如果没有版本号，请重新安装node.js，检查是否勾选Add to Path，或者手动为node.js添加环境变量</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></li>
+<li><p>安装cnpm，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>检测cnpm是否安装成功，输出版本号即为成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v </span><br></pre></td></tr></table></figure></li>
+<li><p>安装Hexo，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li><p>在电脑文件夹中新建一个文件夹来保存Hexo文件</p>
+<blockquote>
+<p>例如：D:\Blog\hexo</p>
+</blockquote>
 </li>
-<li><p>保存编辑好的md文件；</p>
-<p><img src="https://i.loli.net/2021/06/26/hn6kHxjNs5azVpZ.jpg" alt="用typora打开.jpg"></p>
+<li><p>切换Cmder的目录到新建的hexo文件路径，命令如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd D:\Blog\hexo</span><br></pre></td></tr></table></figure></li>
+<li><p>执行<code>hexo init</code>命令，见注意事项</p>
+<blockquote>
+<p>上面这个命令运行到<code>Install dependencies</code>的时候，如果出现卡住情况，按<code>Ctrl + c</code>结束命令即可</p>
+</blockquote>
 </li>
-<li><p>提交博客：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d </span><br></pre></td></tr></table></figure></li>
-<li><p>删除博客</p>
-<ol>
-<li>首先进入到存放博客的目录里source / _post文件夹中，找到Helloworld.md文件，在本地直接执行删除。</li>
-<li>依次执行<code>hexo g</code>，<code>hexo d</code>，再去主页查看，可以发现该文章已经被删除。</li>
-</ol>
+<li><p>执行<code>cnpm install</code> 命令，等待完成初始化工作后，输入<code>hexo s</code>，按住ctrl键，并单击<code>http://localhost:4000</code>，可以在本地查看预览效果了。</p>
+</li>
+<li><p>主题的话，我们选用入门级别的next主题进行配置，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure></li>
+<li><p>修改配置文件（主要是theme和language）,输入<code>ls</code>命令查看是否有_config.yml文件，再输入<code>vi _config.yml</code>进入根目录的配置文件进行修改，按 i 可以进行修改，退出修改得依次按esc键  <strong>shift加；</strong> wq，即可返回到根目录下</p>
+<blockquote>
+<p>theme栏的内容更换成<code>next</code></p>
+<p>language栏的内容更换成<code>zh-CN</code></p>
+</blockquote>
+</li>
+<li><p>输入<code>hexo s</code>预览更改后的效果</p>
 </li>
 </ul>
 <hr>
-<p><strong>参考教程传送门：<a target="_blank" rel="noopener" href="https://aegisprogram.github.io/">ellen的博客</a><strong>、</strong><a target="_blank" rel="noopener" href="https://deardeer.tech/hexo-shan-chu-wen-zhang/">小鹿博客</a></strong></p>
+<h4 id="三、部署在GitHub"><a href="#三、部署在GitHub" class="headerlink" title="三、部署在GitHub"></a>三、部署在GitHub</h4><ul>
+<li><p>注册好GitHub账号，并登陆进去（建议不熟悉英文的开启谷歌翻译）</p>
+</li>
+<li><p>左侧新建一个仓库，仓库的命名格式为：用户名+github.io (例如用户名为dk，则对应的仓库名字为dk.github.io)，添加仓库描述，勾选public，勾选add README，然后点击创建。</p>
+</li>
+<li><p>创建git密匙，在cmder里输入<code>ssh-keygen -t rsa -C “your_email@youremail.com“</code>（这里改成你自己的注册邮箱），连续按住回车键</p>
+</li>
+<li><p>输入<code>cat ~/.ssh/id_rsa.pub</code>，将生成的密匙复制下来<strong>（密匙以ssh-rsa开头，复制的时候要把ssh-rsa也复制上）</strong></p>
+</li>
+<li><p>进入GitHub-点击头像-setting-SSH-New SSH Key，把密匙添加进去，并保存</p>
+</li>
+<li><p>输入<code>ssh -T git@github.com</code>，会出现个<code>Are you sure you want to continue connecting (yes/no/[fingerprint])? </code>，输入yes按回车即可</p>
+</li>
+<li><p>进入GitHub，打开项目，点击code，切换到ssh，将地址复制下来</p>
+</li>
+<li><p>使用<code>vi _config.yml</code>命令，进入根目录下的_config,yml文件下进行配置，找到deploy所在地方，将地址复制在repo一栏，并将branch一栏改成main</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: git@github.com:username/username.github.io.git</span><br><span class="line">	branch: main(我们新建仓库的时候就是main，所以这里直接采用main分支)</span><br></pre></td></tr></table></figure></li>
+<li><p>退出配置文件修改，回到根目录下，执行以下命令（里面要改成自己的用户名和注册邮箱）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#x27;yourname&#x27;(修改成github用户名)</span><br><span class="line">git config --global user.email &#x27;youremail&#x27;(修改注册github所用的邮箱)</span><br></pre></td></tr></table></figure></li>
+<li><p>再输入上传插件的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure></li>
+<li><p>提交文件到GitHub仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li>
+<li><p>至此Hexo博客部署完成，打开GitHub你创建的那个项目，点击Settings，往下滑找到Github pages，点击none 选择main branch，之后你会得到一个地址，这个地址就是你的博客网址了。</p>
+</li>
+</ul>
+<hr>
+<p> <strong>申明：本文是对<a target="_blank" rel="noopener" href="https://aegisprogram.github.io/2021/06/24/How-to-build-your-hexo-blog/#more">ellen的hexo教程</a>进行个人的二次整理，并非原创！</strong></p>
  
       <!-- reward -->
       
@@ -186,7 +236,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -199,15 +249,11 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            Hexo+GitHub博客搭建教程
-          
-        </div>
-      </a>
     
+      <a href="/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">如何提交博客到hexo</div>
+      </a>
     
   </nav>
 

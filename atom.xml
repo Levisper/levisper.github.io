@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-26T13:01:52.614Z</updated>
+  <updated>2021-06-27T15:32:26.307Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+GitHub博客搭建教程</title>
+    <link href="http://example.com/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</id>
+    <published>2021-06-27T13:34:52.000Z</published>
+    <updated>2021-06-27T15:32:26.307Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。搭建大致分为三个流程：准备工作、安装Hexo、部署在GitHub，下面开始介绍详细流程。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;一：准备工作&quot;&gt;&lt;a href=&quot;#一：准备工作&quot; class=&quot;headerlink&quot; title=&quot;一：准备工作&quot;&gt;&lt;/a&gt;一：准备工作&lt;/h4&gt;&lt;h5 id=&quot;1、下载Node-js，并进行安装（详见注意事项）&quot;&gt;&lt;a href=&quot;#1、下载Node-js，并进行安装（详见注意事项）&quot; class=&quot;headerlink&quot; title=&quot;1、下载Node.js，并进行安装（详见注意事项）&quot;&gt;&lt;/a&gt;1、下载&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;，并进行安装（&lt;strong&gt;详见注意事项&lt;/strong&gt;）&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;a.选择windows安装包.msi下载&lt;/p&gt;
+&lt;p&gt;b.安装过程默认C盘，中间切记要选择Add to PATH，然后点Next继续&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;2、下载Git，并进行安装&quot;&gt;&lt;a href=&quot;#2、下载Git，并进行安装&quot; class=&quot;headerlink&quot; title=&quot;2、下载Git，并进行安装&quot;&gt;&lt;/a&gt;2、下载&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;，并进行安装&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;可自行选择安装路径，后面的安装步骤只要全部点击Next即可，无需自行配置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot;&gt;&lt;a href=&quot;#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot; class=&quot;headerlink&quot; title=&quot;3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot;&gt;&lt;/a&gt;3、下载&lt;a href=&quot;https://cmder.net/&quot;&gt;Cmder&lt;/a&gt;，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;下载选择Full版本&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>如何提交博客到hexo</title>
