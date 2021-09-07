@@ -136,4 +136,45 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Railway上部署pagermaid</title>
+    <url>/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/</url>
+    <content><![CDATA[<p>Pagermaid 是一个应用在 Telegram 账号上的<a href="https://github.com/Xtao-Labs/PagerMaid-Modify">开源机器人项目</a>。电报个人账号通过配合Pagermaid程序，可以实现很多实用快捷操作，例如收集贴纸，谷歌搜索，删除个人消息等等。</p>
+<p>它目前可以通过两种方式部署：一种方法是在VPS操作，前提是自己拥有一台服务器，不论是国内的还是国外的；另一种则是免于购买服务器，利用<strong>GitHub</strong>账号，并结合免费的<strong>Railway</strong>云服务器，可以进行搭建。后者的出现，也是开发者为了推广该项目进行的新尝试。</p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1-GitHub账号（注册时间必须在一个月以上，Railway有检测机制）"><a href="#1-GitHub账号（注册时间必须在一个月以上，Railway有检测机制）" class="headerlink" title="1.GitHub账号（注册时间必须在一个月以上，Railway有检测机制）"></a>1.GitHub账号（注册时间必须在一个月以上，Railway有检测机制）</h5><h5 id="2-Telegram账号-的API"><a href="#2-Telegram账号-的API" class="headerlink" title="2.Telegram账号 的API"></a>2.Telegram账号 的API</h5><blockquote>
+<p><a href="https://my.telegram.org/"><strong>申请地址</strong></a></p>
+<p>输入电话号码登录后，进入api development tools,申请完成后得到<strong>API_ID</strong>和<strong>API_HASH</strong>，这两个是部署所必须的，务必保存好。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![photo_2021-09-07_12-41-47.jpg](https://i.loli.net/2021/09/07/vHZz4STgyLOp6MK.jpg)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h5 id="3-SESSION（账户授权字符）"><a href="#3-SESSION（账户授权字符）" class="headerlink" title="3.SESSION（账户授权字符）"></a>3.SESSION（账户授权字符）</h5><blockquote>
+<p><a href="https://replit.com/@mrwangzhe/gensession">申请网站</a></p>
+<p>按照下方图片指示进行操作，完成后，session会发到你电报账号的<strong>收藏夹</strong>位置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![4.jpg](https://i.loli.net/2021/09/07/3pigQauIHNrJybh.jpg)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+<h4 id="二：部署工作"><a href="#二：部署工作" class="headerlink" title="二：部署工作"></a>二：部署工作</h4><h4 id="1-登陆GitHub账号"><a href="#1-登陆GitHub账号" class="headerlink" title="1.登陆GitHub账号"></a>1.登陆GitHub账号</h4><p><a href="https://github.com/">官网</a></p>
+<h4 id="2-授权GitHub账号登陆Railway官网"><a href="#2-授权GitHub账号登陆Railway官网" class="headerlink" title="2.授权GitHub账号登陆Railway官网"></a>2.授权GitHub账号登陆Railway官网</h4><p><a href="https://railway.app/">Railway官网</a></p>
+<h4 id="3-登陆部署界面"><a href="#3-登陆部署界面" class="headerlink" title="3.登陆部署界面"></a>3.登陆部署界面</h4><p>点击<a href="https://railway.app/new/template?template=https://github.com/Xtao-Labs/PagerMaid-Modify/tree/master&envs=session,api_key,api_hash&sessionDesc=Your+telethon+session+string.&api_keyDesc=api_id,+from+my.telegram.org&api_hashDesc=api_hash,+from+my.telegram.org&referralCode=xtaolabs">部署界面</a>，跳转到下图界面后，按照提示填写，并输入<strong>API_ID</strong>、<strong>API_HASH</strong>以及<strong>SESSION</strong>，最后点击deploy。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![5.jpg](https://i.loli.net/2021/09/07/vOjYXWsCRaqhAHo.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>当显示Success时，即代表PagerMaid部署完成。在电报随机一个窗口发送-help,有命令提示发送出来，则表示运行成功，若无反应，请按照操作重新部署！（删除已经部署的项目即可）</p>
+<hr>
+<h4 id="三：注意事项"><a href="#三：注意事项" class="headerlink" title="三：注意事项"></a>三：注意事项</h4><ol>
+<li>Railway每月只提供5＄的免费额度，一个机器人项目每月的成本基本不会超过这个限额，如果还部署了其他项目，请注意每月的消费量，超过5美元，会停止服务，直至下月重新开始。</li>
+<li>PagerMaid项目建议只安装适量插件，插件数不宜过多。</li>
+<li>理论上“永久”，但Railway如果更改政策，服务可能随时终止。</li>
+<li>出现部署问题，请自行检查是否出现哪一步的疏忽遗漏，如第一次没有成功，请重新部署！也可加入<a href="https://t.me/opensource_community">开源社区</a>咨询相关问题。</li>
+<li>本教程参考开发者Xtao的<a href="https://github.com/Xtao-Labs/PagerMaid-Modify">PagerMaid</a>开源项目内容，如有更多问题可以联系开发者进行沟通。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
 </search>
