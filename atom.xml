@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-07T05:45:32.121Z</updated>
+  <updated>2021-09-07T05:54:35.552Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/"/>
     <id>http://example.com/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/</id>
     <published>2021-09-07T03:54:23.000Z</published>
-    <updated>2021-09-07T05:45:32.121Z</updated>
+    <updated>2021-09-07T05:54:35.552Z</updated>
     
     
     <summary type="html">&lt;p&gt;Pagermaid 是一个应用在 Telegram 账号上的&lt;a href=&quot;https://github.com/Xtao-Labs/PagerMaid-Modify&quot;&gt;开源机器人项目&lt;/a&gt;。电报个人账号通过配合Pagermaid程序，可以实现很多实用快捷操作，例如收集贴纸，谷歌搜索，删除个人消息等等。&lt;/p&gt;

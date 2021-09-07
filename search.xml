@@ -147,19 +147,18 @@
 <h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1-GitHub账号（注册时间必须在一个月以上，Railway有检测机制）"><a href="#1-GitHub账号（注册时间必须在一个月以上，Railway有检测机制）" class="headerlink" title="1.GitHub账号（注册时间必须在一个月以上，Railway有检测机制）"></a>1.GitHub账号（注册时间必须在一个月以上，Railway有检测机制）</h5><h5 id="2-Telegram账号-的API"><a href="#2-Telegram账号-的API" class="headerlink" title="2.Telegram账号 的API"></a>2.Telegram账号 的API</h5><blockquote>
 <p><a href="https://my.telegram.org/"><strong>申请地址</strong></a></p>
 <p>输入电话号码登录后，进入api development tools,申请完成后得到<strong>API_ID</strong>和<strong>API_HASH</strong>，这两个是部署所必须的，务必保存好。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![photo_2021-09-07_12-41-47.jpg](https://i.loli.net/2021/09/07/vHZz4STgyLOp6MK.jpg)</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2021/09/07/vHZz4STgyLOp6MK.jpg" alt="photo_2021-09-07_12-41-47.jpg"></p>
 </blockquote>
 <h5 id="3-SESSION（账户授权字符）"><a href="#3-SESSION（账户授权字符）" class="headerlink" title="3.SESSION（账户授权字符）"></a>3.SESSION（账户授权字符）</h5><blockquote>
 <p><a href="https://replit.com/@mrwangzhe/gensession">申请网站</a></p>
 <p>按照下方图片指示进行操作，完成后，session会发到你电报账号的<strong>收藏夹</strong>位置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![4.jpg](https://i.loli.net/2021/09/07/3pigQauIHNrJybh.jpg)</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2021/09/07/3pigQauIHNrJybh.jpg" alt="4.jpg"></p>
 </blockquote>
 <hr>
 <h4 id="二：部署工作"><a href="#二：部署工作" class="headerlink" title="二：部署工作"></a>二：部署工作</h4><h4 id="1-登陆GitHub账号"><a href="#1-登陆GitHub账号" class="headerlink" title="1.登陆GitHub账号"></a>1.登陆GitHub账号</h4><p><a href="https://github.com/">官网</a></p>
 <h4 id="2-授权GitHub账号登陆Railway官网"><a href="#2-授权GitHub账号登陆Railway官网" class="headerlink" title="2.授权GitHub账号登陆Railway官网"></a>2.授权GitHub账号登陆Railway官网</h4><p><a href="https://railway.app/">Railway官网</a></p>
 <h4 id="3-登陆部署界面"><a href="#3-登陆部署界面" class="headerlink" title="3.登陆部署界面"></a>3.登陆部署界面</h4><p>点击<a href="https://railway.app/new/template?template=https://github.com/Xtao-Labs/PagerMaid-Modify/tree/master&envs=session,api_key,api_hash&sessionDesc=Your+telethon+session+string.&api_keyDesc=api_id,+from+my.telegram.org&api_hashDesc=api_hash,+from+my.telegram.org&referralCode=xtaolabs">部署界面</a>，跳转到下图界面后，按照提示填写，并输入<strong>API_ID</strong>、<strong>API_HASH</strong>以及<strong>SESSION</strong>，最后点击deploy。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![5.jpg](https://i.loli.net/2021/09/07/vOjYXWsCRaqhAHo.jpg)</span><br></pre></td></tr></table></figure>
-
+<p><img src="https://i.loli.net/2021/09/07/vOjYXWsCRaqhAHo.jpg" alt="5.jpg"></p>
 <p>当显示Success时，即代表PagerMaid部署完成。在电报随机一个窗口发送-help,有命令提示发送出来，则表示运行成功，若无反应，请按照操作重新部署！（删除已经部署的项目即可）</p>
 <hr>
 <h4 id="三：注意事项"><a href="#三：注意事项" class="headerlink" title="三：注意事项"></a>三：注意事项</h4><ol>
