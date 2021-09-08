@@ -176,4 +176,46 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>利用Cloudflare给Hexo博客套域名</title>
+    <url>/2021/09/07/%E5%88%A9%E7%94%A8Cloudflare%E7%BB%99Hexo%E5%8D%9A%E5%AE%A2%E5%A5%97%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>Hexo博客可以通过GitHub生成的链接地址访问博客页，也可以使用自行购买的域名进行配置访问。本文讲解如何通过Cloudflare给博客加上域名，让你的博客访问起来更加轻松。</p>
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、购买一个域名（不作详细介绍）"><a href="#1、购买一个域名（不作详细介绍）" class="headerlink" title="1、购买一个域名（不作详细介绍）"></a>1、购买一个域名（不作详细介绍）</h5><blockquote>
+<p>国内外域名均可，最好是长期，一年及以上</p>
+</blockquote>
+<h5 id="2、注册Cloudflare账号"><a href="#2、注册Cloudflare账号" class="headerlink" title="2、注册Cloudflare账号"></a>2、注册Cloudflare账号</h5><blockquote>
+<p><a href="https://dash.cloudflare.com/">官网地址</a></p>
+</blockquote>
+<span id="more"></span>
+
+<hr>
+<h4 id="二：部署流程"><a href="#二：部署流程" class="headerlink" title="二：部署流程"></a>二：部署流程</h4><h5 id="1-解析域名到Cloudflare"><a href="#1-解析域名到Cloudflare" class="headerlink" title="1.解析域名到Cloudflare"></a>1.解析域名到Cloudflare</h5><p>每个域名商的解析方法都不一样，参考对应的网上的教程即可</p>
+<h5 id="2-获取仓库名的IP地址"><a href="#2-获取仓库名的IP地址" class="headerlink" title="2.获取仓库名的IP地址"></a>2.获取仓库名的IP地址</h5><p>window + R 打开并输入cmd，进入终端后输入 ping + 用户名.github.io，即ping  levisper.github.io</p>
+<p><img src="https://i.loli.net/2021/09/08/86Ebwn4y1oMAGJI.jpg" alt="4.jpg"></p>
+<p>如果是使用cmder，也可以直接在里面ping levisper.github.io ，得到 levisper.github.io对应的IP</p>
+<p><img src="https://i.loli.net/2021/09/08/rGPtg39UMScoDbJ.jpg" alt="5.jpg"></p>
+<h5 id="3-添加解析记录"><a href="#3-添加解析记录" class="headerlink" title="3.添加解析记录"></a>3.添加解析记录</h5><p>打开dns解析记录页面，点击添加记录</p>
+<p><img src="https://i.loli.net/2021/09/08/KTdMePYtIbGVWAx.jpg" alt="1.jpg"></p>
+<p>先添加一条CNAME解析，类型选择CNAME，名称填写www，目标填写博客对应的仓库名，代理状态关闭（关闭小云朵），保存</p>
+<p><img src="https://i.loli.net/2021/09/08/FuTHq9I4iSLaQwZ.jpg" alt="2.jpg"></p>
+<p>再添加一条A解析，类型选择A，名称为：@（会自动跳转域名），地址填上述的IP地址，小云朵关闭，并保存</p>
+<p><img src="https://i.loli.net/2021/09/08/j5XpivWB9R1kxeh.jpg" alt="6.jpg"></p>
+<h5 id="4-在项目目录里添加CNAME文件"><a href="#4-在项目目录里添加CNAME文件" class="headerlink" title="4.在项目目录里添加CNAME文件"></a>4.在项目目录里添加CNAME文件</h5><p>在项目目录中 source 文件夹中添加CNAME文件，先用.txt后缀，打开文本编辑器，将域名输入进去，例如本站的域名为<a href="http://www.020810.xyz/">www.020810.xyz</a></p>
+<p><img src="https://i.loli.net/2021/09/08/3sibgaJG6WZPDBQ.jpg" alt="7.jpg"></p>
+<h5 id="5-GitHub里修改域名链接"><a href="#5-GitHub里修改域名链接" class="headerlink" title="5.GitHub里修改域名链接"></a>5.GitHub里修改域名链接</h5><p>打开博客的仓库设置，找到page页面，按照下图提示填入域名保存</p>
+<p><img src="https://i.loli.net/2021/09/08/4wIPyVDlFftX2HY.jpg" alt="8.jpg"></p>
+<p>至此，域名已经成功链接博客，可以通过访问域名来访问博客。</p>
+<blockquote>
+<p><strong>输入原来的 用户名+github.io网址会直接链接到新绑定的域名里</strong></p>
+</blockquote>
+<hr>
+<h5 id="6-参考教程：部署在GitHub的个人博客如何绑定个人域名"><a href="#6-参考教程：部署在GitHub的个人博客如何绑定个人域名" class="headerlink" title="6.参考教程：部署在GitHub的个人博客如何绑定个人域名"></a>6.参考教程：<a href="https://segmentfault.com/a/1190000023662389">部署在GitHub的个人博客如何绑定个人域名</a></h5>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
 </search>
