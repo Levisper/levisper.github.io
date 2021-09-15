@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-15T10:44:09.880Z</updated>
+  <updated>2021-09-15T13:30:53.274Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/09/15/Gridea%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://example.com/2021/09/15/Gridea%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
     <published>2021-09-15T02:53:09.000Z</published>
-    <updated>2021-09-15T10:44:09.880Z</updated>
+    <updated>2021-09-15T13:30:53.274Z</updated>
     
     
     <summary type="html">&lt;p&gt;许多人想拥有自己博客，但碍于没有实际部署经验。目前流行的Hexo、Hugo和WordPress博客部署门槛相对较高，对于纯新手来讲有一定的难度。&lt;/p&gt;
