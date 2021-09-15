@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-08T10:05:37.255Z</updated>
+  <updated>2021-09-15T10:44:09.880Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gridea博客搭建</title>
+    <link href="http://example.com/2021/09/15/Gridea%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2021/09/15/Gridea%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-09-15T02:53:09.000Z</published>
+    <updated>2021-09-15T10:44:09.880Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;许多人想拥有自己博客，但碍于没有实际部署经验。目前流行的Hexo、Hugo和WordPress博客部署门槛相对较高，对于纯新手来讲有一定的难度。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gridea.dev/&quot;&gt;Gridea&lt;/a&gt;是一个静态博客写作客户端，所有文件都在本地，没有数据库，实现简单，支持Markdown，部署起来非常容易！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Levisper/PictureBed@e3a0d251b5ca5e510aa73581649c19e40e5815e1/2021/09/15/57165d6e797f43786684d47fd7e5778a.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>利用Cloudflare给Hexo博客套域名</title>

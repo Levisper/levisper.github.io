@@ -218,4 +218,78 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Gridea博客搭建</title>
+    <url>/2021/09/15/Gridea%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>许多人想拥有自己博客，但碍于没有实际部署经验。目前流行的Hexo、Hugo和WordPress博客部署门槛相对较高，对于纯新手来讲有一定的难度。</p>
+<p><a href="https://gridea.dev/">Gridea</a>是一个静态博客写作客户端，所有文件都在本地，没有数据库，实现简单，支持Markdown，部署起来非常容易！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@e3a0d251b5ca5e510aa73581649c19e40e5815e1/2021/09/15/57165d6e797f43786684d47fd7e5778a.png"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1-GitHub账号"><a href="#1-GitHub账号" class="headerlink" title="1.GitHub账号"></a>1.GitHub账号</h5><blockquote>
+<p>没有的小伙伴就去注册一个吧：<a href="https://github.com/">传送门</a></p>
+</blockquote>
+<h5 id="2-Gridea"><a href="#2-Gridea" class="headerlink" title="2.Gridea"></a>2.Gridea</h5><blockquote>
+<p>最新版本：<a href="https://github.com/EryouHao/gridea-test-install/releases/tag/1.0">客户端下载</a></p>
+<p>自行安装，默认C盘，建议装在其他盘</p>
+</blockquote>
+<hr>
+<h4 id="二：部署流程"><a href="#二：部署流程" class="headerlink" title="二：部署流程"></a>二：部署流程</h4><ol>
+<li><p>在GitHub新建一个仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@8ff4e11e312f1970c6331d98f6a5b0cbfde48e03/2021/09/15/460285b7ae7c7c34febfa53f2bbc6c3d.png"></p>
+</li>
+<li><p>填写仓库名：<code>用户名+.github.io</code>，并创建保存</p>
+<blockquote>
+<p>我的用户名是<code>erenblogs</code>，如下图所示</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@2ffa678172e1e485ef8bbec1a1b7ec0cf88d6c0f/2021/09/15/2904ddab82de92182393a3807aa1ffa6.png"></p>
+</li>
+<li><p>新建一个Token，settings—Developer settings—Personal access tokens</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@018ec365db1ab1e66709ec6ed2cf79a3544d0555/2021/09/15/20cdfcf8ad41133fabe33614f2891b27.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@659d95c0cd2f014889269747b71199870d814d28/2021/09/15/c95101beadaa931622f3d174437b6b91.png"></p>
+<p>此处注意选择，一定要勾选repo！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@ab56b8f97e95e9542f8d0a12651d306e0d2ea067/2021/09/15/c1b5d704c830af1691c94887c8010894.png"></p>
+<p>将生成的token复制保存</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@3bfc4d5fc741345ff927c91cdd2b2b6b7be687c2/2021/09/15/7fc0079f5db73c00649de5a0e14acfd0.png"></p>
+<ol start="4">
+<li><p>打开gridea客户端的远程界面，按照如下填写，并点击右下角的保存!</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@93ddb0e509dfcefcbd096e533067375b18601412/2021/09/15/1fa74ea3094ec1769a2115811aa87ff1.png"></p>
+</li>
+<li><p>点击检测远程连接，显示远程连接成功</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@e085b10f159d327b8401a0f47853087d753e97bb/2021/09/15/bdd4e12184743b373a71a35e418904a3.png"></p>
+<ol start="6">
+<li>最后先预览再同步，显示同步成功则表示部署完成</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@401ce63768d8a8fd5a67b52a440470f7b918f363/2021/09/15/6b9a3a320a3e2895acf709098dfe72de.png"></p>
+<ol start="7">
+<li><p>同步之后需要等待一会，在浏览器输入erenblogs.github.io(此处换成你自己的用户名)，即可看到博客内容</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@7f450a79190fd13ab4e16aae1278d77801c584b6/2021/09/15/1d1af94fbd17889f54eb6832c5837f63.png"></p>
+</li>
+</ol>
+<hr>
+<h4 id="三：域名部署"><a href="#三：域名部署" class="headerlink" title="三：域名部署"></a>三：域名部署</h4><blockquote>
+<p><strong>有域名的同学可以进行尝试，没有域名的同学可以忽略此部分</strong></p>
+</blockquote>
+<ol>
+<li>进入GitHub Pages页面，将DNS解析好的域名填入下图custom domain处，并save，勾选enforce https</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@81c99d7d087e6985996ecc2d235a92eea217d05e/2021/09/15/efa907b6f78ad4af3cde0a05c962b867.png"></p>
+<ol start="2">
+<li>将域名填入cname，并点击保存和同步！（一定要同步）</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Levisper/PictureBed@4c113247ed8de4f19302a772bff7d3976eef2096/2021/09/15/8511f4ba0bcd7cfb1bbe9b664faead9e.png"></p>
+<p>3.浏览器输入自己的域名访问即可：<a href="https://blog.020810.xyz/">https://blog.020810.xyz/</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
 </search>
