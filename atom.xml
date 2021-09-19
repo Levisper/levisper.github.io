@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-18T03:24:48.666Z</updated>
+  <updated>2021-09-19T06:15:45.816Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chevereto图床搭建</title>
+    <link href="http://example.com/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-09-19T02:58:59.000Z</published>
+    <updated>2021-09-19T06:15:45.816Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;图床一般是指储存图片的服务器，也是写博客必须用到的一项服务。&lt;/p&gt;
+&lt;p&gt;目前的图床可以分为三类：公共图床（大多免费，有的需要注册）、托管图床（GitHub、Gitee等）、服务器图床（国内云服务器厂商、国外VPS等），优劣参见下图。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/09/19/image-20210919112952735.png&quot; alt=&quot;image-20210919112952735&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用来源：&lt;a href=&quot;https://lovelijunyi.gitee.io/posts/a833.html&quot;&gt;图床对比与Github图床的优化&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本文讲述的chevereto图床是属于服务器图床，方便自行管理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>美图鉴赏</title>
