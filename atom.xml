@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-19T06:15:45.816Z</updated>
+  <updated>2021-09-19T12:27:02.402Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chevereto上传图片的进阶配置</title>
+    <link href="http://example.com/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-09-19T10:33:44.000Z</published>
+    <updated>2021-09-19T12:27:02.402Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一般来讲，可以直接在搭建好的网站上传本地图片，适用场景比较广泛。但对于博主来讲，如果通过网站上传生成链接后，再复制粘贴，整个过程稍显繁琐。尤其是遇到需要图文配合的文章，这个问题就会凸显地更加严重。&lt;/p&gt;
+&lt;p&gt;利用常用的Markdown工具Typora，并配和图片上传工具PicGo，我们可以实现编辑文章过程中上传图片至Chevereto的快捷操作&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Chevereto图床搭建</title>

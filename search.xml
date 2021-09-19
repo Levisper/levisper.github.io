@@ -346,4 +346,69 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Chevereto上传图片的进阶配置</title>
+    <url>/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>一般来讲，可以直接在搭建好的网站上传本地图片，适用场景比较广泛。但对于博主来讲，如果通过网站上传生成链接后，再复制粘贴，整个过程稍显繁琐。尤其是遇到需要图文配合的文章，这个问题就会凸显地更加严重。</p>
+<p>利用常用的Markdown工具Typora，并配和图片上传工具PicGo，我们可以实现编辑文章过程中上传图片至Chevereto的快捷操作</p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、Chevereto图床"><a href="#1、Chevereto图床" class="headerlink" title="1、Chevereto图床"></a>1、<code>Chevereto</code>图床</h5><blockquote>
+<p>已配置好，直接域名访问</p>
+<p>未搭建的请参考：<a href="https://www.020810.xyz/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">Chevereto图床搭建</a></p>
+</blockquote>
+<h5 id="2、Node-js安装"><a href="#2、Node-js安装" class="headerlink" title="2、Node.js安装"></a>2、Node.js安装</h5><blockquote>
+<p><a href="https://nodejs.org/zh-cn/">官网</a></p>
+<p>为安装<code> PicGo</code> 的插件作准备（<code>PicGo</code> 要使用 <code>npm</code> 来安装插件）</p>
+</blockquote>
+<h5 id="3、PicGo安装"><a href="#3、PicGo安装" class="headerlink" title="3、PicGo安装"></a>3、PicGo安装</h5><blockquote>
+<p><a href="https://github.com/Molunerfinn/PicGo/releases">GitHub地址</a></p>
+</blockquote>
+<h5 id="4、Typora安装"><a href="#4、Typora安装" class="headerlink" title="4、Typora安装"></a>4、Typora安装</h5><blockquote>
+<p><a href="https://typora.io/">官网</a></p>
+</blockquote>
+<hr>
+<h4 id="二：进阶配置"><a href="#二：进阶配置" class="headerlink" title="二：进阶配置"></a>二：进阶配置</h4><h5 id="1、PicGo下载插件"><a href="#1、PicGo下载插件" class="headerlink" title="1、PicGo下载插件"></a>1、PicGo下载插件</h5><p>进入插件设置，并搜索Chevereto Uploader和web-uploader两个插件,然后下载</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919193354285.png" alt="image-20210919193354285"></p>
+<h5 id="2、配置自定义web图床参数"><a href="#2、配置自定义web图床参数" class="headerlink" title="2、配置自定义web图床参数"></a>2、配置自定义web图床参数</h5><p>打开自定义web图床设置</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919194427272.png" alt="image-20210919194427272"></p>
+<p>对照参数填入自定义web图床设置中</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">API 地址: https://your-site/api/1/uploadPOST </span><br><span class="line">参数名: sourceJSON </span><br><span class="line">路径: image.url</span><br><span class="line">自定义Body: &#123;&quot;key&quot;:&quot;API Key&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中API Key 在管理员控制台仪表盘设置中可以看到</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919194821475.png" alt="image-20210919194821475"></p>
+<h5 id="3、配置Chevereto-Uploader插件"><a href="#3、配置Chevereto-Uploader插件" class="headerlink" title="3、配置Chevereto Uploader插件"></a>3、配置Chevereto Uploader插件</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Url: https://your-site/api/1/upload</span><br><span class="line">Key: 填入API Key</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919195307543.png" alt="image-20210919195307543"></p>
+<h5 id="4、配置-Typora"><a href="#4、配置-Typora" class="headerlink" title="4、配置 Typora"></a>4、配置 Typora</h5><p>打开偏好设置</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919195745669.png" alt="image-20210919195745669"></p>
+<p>选择PicGo(app)以.exe文件路径，最后验证图片上传选项，成功上传则表示配置成功</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919200029050.png" alt="image-20210919200029050"></p>
+<h5 id="5、进一步完善Chevereto的上传机制"><a href="#5、进一步完善Chevereto的上传机制" class="headerlink" title="5、进一步完善Chevereto的上传机制"></a>5、进一步完善Chevereto的上传机制</h5><p>按照前四步的操作，最后上传的图片是放置在Chevereto的访客图片里，所有的访客均可以看见。为了让照片传到指定的相册位置，便于管理区分图片，搭建者和游客可以做进一步的配置修改</p>
+<ol>
+<li><p>修改 Chevereto 源代码</p>
+<p>将网站根目录下<code>/app/routes/route.api.php</code>复制到同目录下的<code>/overrides</code>文件夹。该步骤使得复制后的文件在不替换的情况下更新，既保存源文件，又使修改后的代码能在源代码保留的情况下运行。</p>
+<p>修改<code>/overrides/route.api.php</code>源代码如下，<strong>±对应新增删除代码</strong>，该步骤将接受来自客户端的用户名和相册 ID 参数，避免上传至访客相册：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$version = $handler-&gt;request[0];</span><br><span class="line">$action = $handler-&gt;request[1];</span><br><span class="line">+ $user = $_REQUEST[&#x27;user&#x27;];	// 新增</span><br><span class="line">+ $album = $_REQUEST[&#x27;album&#x27;];	//新增</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// CHV\Image::uploadToWebsite($source, &#x27;username&#x27;, [params]) to inject API uploads to a given username</span><br><span class="line">- $uploaded_id = CHV\Image::uploadToWebsite($source);</span><br><span class="line">+ $uploaded_id = CHV\Image::uploadToWebsite($source, $user, array(&#x27;album_id&#x27;=&gt;$album));</span><br></pre></td></tr></table></figure></li>
+<li><p>修改 PicGo配置</p>
+<p>前往图床新建相册并获取相册id</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919201414879.png" alt="image-20210919201414879"></p>
+<p>在 <code>PicGo</code> 的自定义web图床设置追加用户名和相册 ID</p>
+<p><code>&#123;&quot;key&quot;:&quot;your key&quot;, &quot;user&quot;:&quot;username&quot;, &quot;album&quot;:&quot;albumid&quot;&#125;</code></p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-202109192020153539667e030c4e7a974.png" alt="image-20210919202015353"></p>
+<p>最后在 <code>Typora</code> 偏好设置中测试即可</p>
+</li>
+</ol>
+<hr>
+<h4 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h4><h6 id="Typora-PicGo-自动上传图片到-Chevereto-图床"><a href="#Typora-PicGo-自动上传图片到-Chevereto-图床" class="headerlink" title="Typora + PicGo 自动上传图片到 Chevereto 图床"></a><a href="https://tyzhang.top/article/autoupload/">Typora + PicGo 自动上传图片到 Chevereto 图床</a></h6><h5 id="Typora-配置-PicGo-插件-Chevereto-Uploader，实现自动上传图片到自建的-Chevereto-图床"><a href="#Typora-配置-PicGo-插件-Chevereto-Uploader，实现自动上传图片到自建的-Chevereto-图床" class="headerlink" title="Typora 配置 PicGo 插件 Chevereto Uploader，实现自动上传图片到自建的 Chevereto 图床"></a><a href="https://www.4dmayi.com/3235.html">Typora 配置 PicGo 插件 Chevereto Uploader，实现自动上传图片到自建的 Chevereto 图床</a></h5>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>
