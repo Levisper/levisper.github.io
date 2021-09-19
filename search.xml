@@ -351,6 +351,7 @@
     <url>/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>一般来讲，可以直接在搭建好的网站上传本地图片，适用场景比较广泛。但对于博主来讲，如果通过网站上传生成链接后，再复制粘贴，整个过程稍显繁琐。尤其是遇到需要图文配合的文章，这个问题就会凸显地更加严重。</p>
 <p>利用常用的Markdown工具Typora，并配和图片上传工具PicGo，我们可以实现编辑文章过程中上传图片至Chevereto的快捷操作</p>
+<p><img src="https://pic.020810.xyz/images/2021/09/19/image-20210919202933705.png" alt="image-20210919202933705"></p>
 <span id="more"></span>
 
 <hr>
