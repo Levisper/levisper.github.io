@@ -278,7 +278,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Chevereto图床搭建</title>
+    <title>Chevereto图床||搭建</title>
     <url>/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>图床一般是指储存图片的服务器，也是写博客必须用到的一项服务。</p>
 <p>目前的图床可以分为三类：公共图床（大多免费，有的需要注册）、托管图床（GitHub、Gitee等）、服务器图床（国内云服务器厂商、国外VPS等），优劣参见下图。</p>
@@ -347,7 +347,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Chevereto上传图片的进阶配置</title>
+    <title>Chevereto图床||进阶</title>
     <url>/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>一般来讲，可以直接在搭建好的网站上传本地图片，适用场景比较广泛。但对于博主来讲，如果通过网站上传生成链接后，再复制粘贴，整个过程稍显繁琐。尤其是遇到需要图文配合的文章，这个问题就会凸显地更加严重。</p>
 <p>利用常用的Markdown工具Typora，并配和图片上传工具PicGo，我们可以实现编辑文章过程中上传图片至Chevereto的快捷操作</p>
@@ -410,6 +410,15 @@
       </categories>
       <tags>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果CMS10搭建||视频站</title>
+    <url>/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/</url>
+    <content><![CDATA[<p>如何搭建个人的视频站点,</p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>

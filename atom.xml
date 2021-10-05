@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-09-19T12:31:35.134Z</updated>
+  <updated>2021-10-05T01:49:12.526Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Chevereto上传图片的进阶配置</title>
+    <title>苹果CMS10搭建||视频站</title>
+    <link href="http://example.com/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/"/>
+    <id>http://example.com/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/</id>
+    <published>2021-09-22T12:01:11.000Z</published>
+    <updated>2021-10-05T01:49:12.526Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如何搭建个人的视频站点,&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chevereto图床||进阶</title>
     <link href="http://example.com/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/"/>
     <id>http://example.com/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</id>
     <published>2021-09-19T10:33:44.000Z</published>
-    <updated>2021-09-19T12:31:35.134Z</updated>
+    <updated>2021-10-05T01:50:12.035Z</updated>
     
     
     <summary type="html">&lt;p&gt;一般来讲，可以直接在搭建好的网站上传本地图片，适用场景比较广泛。但对于博主来讲，如果通过网站上传生成链接后，再复制粘贴，整个过程稍显繁琐。尤其是遇到需要图文配合的文章，这个问题就会凸显地更加严重。&lt;/p&gt;
@@ -38,11 +62,11 @@
   </entry>
   
   <entry>
-    <title>Chevereto图床搭建</title>
+    <title>Chevereto图床||搭建</title>
     <link href="http://example.com/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/"/>
     <id>http://example.com/2021/09/19/Chevereto%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</id>
     <published>2021-09-19T02:58:59.000Z</published>
-    <updated>2021-09-19T06:15:45.816Z</updated>
+    <updated>2021-10-05T01:49:59.516Z</updated>
     
     
     <summary type="html">&lt;p&gt;图床一般是指储存图片的服务器，也是写博客必须用到的一项服务。&lt;/p&gt;
