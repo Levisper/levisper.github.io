@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-05T01:49:12.526Z</updated>
+  <updated>2021-10-06T13:45:14.701Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://example.com/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/"/>
     <id>http://example.com/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/</id>
     <published>2021-09-22T12:01:11.000Z</published>
-    <updated>2021-10-05T01:49:12.526Z</updated>
+    <updated>2021-10-06T13:45:14.701Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如何搭建个人的视频站点,&lt;/p&gt;
-</summary>
-        
-      
+    <summary type="html">&lt;p&gt;苹果CMS程序是一套采用PHP+MYSQL环境下运行的完善而强大的快速建站系统。因此，通过它，我们可以方便快捷地搭建个人视频站点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/06/image-20211006173930313.png&quot; alt=&quot;image-20211006173930313&quot;&gt;&lt;/p&gt;</summary>
     
     
     

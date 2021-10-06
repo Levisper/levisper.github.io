@@ -415,8 +415,70 @@
   <entry>
     <title>苹果CMS10搭建||视频站</title>
     <url>/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/</url>
-    <content><![CDATA[<p>如何搭建个人的视频站点,</p>
-]]></content>
+    <content><![CDATA[<p>苹果CMS程序是一套采用PHP+MYSQL环境下运行的完善而强大的快速建站系统。因此，通过它，我们可以方便快捷地搭建个人视频站点。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006173930313.png" alt="image-20211006173930313"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、VPS一台"><a href="#1、VPS一台" class="headerlink" title="1、VPS一台"></a>1、VPS一台</h5><blockquote>
+<p>推荐购买国外商家，选择配置较高点的</p>
+</blockquote>
+<h5 id="2、宝塔环境安装"><a href="#2、宝塔环境安装" class="headerlink" title="2、宝塔环境安装"></a>2、宝塔环境安装</h5><blockquote>
+<p><a href="https://www.bt.cn/">宝塔官网</a></p>
+<p><a href="https://www.bt.cn/bbs/thread-19376-1-1.html">安装教程</a></p>
+</blockquote>
+<p> 环境配置：Nginx + PHP (5.6 +) + MySQL(5.5 +) </p>
+<h5 id="3、域名解析"><a href="#3、域名解析" class="headerlink" title="3、域名解析"></a>3、域名解析</h5><blockquote>
+<p>如果没有域名，先去购买一个，国内外域名服务商均可</p>
+<p>解析你购买的域名到用于部署图床的VPS,A类型解析 (推荐CloudFlare平台)</p>
+</blockquote>
+<h5 id="4、CMS程序下载"><a href="#4、CMS程序下载" class="headerlink" title="4、CMS程序下载"></a>4、CMS程序下载</h5><blockquote>
+<p><a href="https://github.com/magicblack/maccms10/releases">GitHub</a></p>
+<p><a href="https://www.maccms.cn/down.html">CMS官网</a></p>
+</blockquote>
+<p>下载程序压缩包至本地</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006204407213.png" alt="image-20211006204407213"></p>
+<hr>
+<h4 id="二：网站部署"><a href="#二：网站部署" class="headerlink" title="二：网站部署"></a>二：网站部署</h4><h5 id="1、宝塔中添加站点"><a href="#1、宝塔中添加站点" class="headerlink" title="1、宝塔中添加站点"></a>1、宝塔中添加站点</h5><p>登陆宝塔之后，点击网站—添加站点</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006204803770.png" alt="image-20211006204803770"></p>
+<p>填如相应的域名，选择数据库并更改账号和密码，勾选php版本</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205046088.png" alt="image-20211006205046088"></p>
+<h5 id="2、上传CMS程序至网站根目录"><a href="#2、上传CMS程序至网站根目录" class="headerlink" title="2、上传CMS程序至网站根目录"></a>2、上传CMS程序至网站根目录</h5><p>点击网站根目录，删除目录下的 index.html 和 404.html 文件</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211006205329125.png" alt="image-20211006205329125"></p>
+<p>上传前面下载好的CMS压缩包</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205518427.png" alt="image-20211006205518427"></p>
+<p>解压文件，并将文件夹里的内容全选之后剪切，粘贴到根目录下，如图所示</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205635638.png" alt="image-20211006205635638"></p>
+<p>给网站申请免费ssl证书，并开启强制HTTPS</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211006210116126.png" alt="image-20211006210116126"></p>
+<h5 id="3、配置网站"><a href="#3、配置网站" class="headerlink" title="3、配置网站"></a>3、配置网站</h5><p>在浏览器中输入你的网址，会自动跳转到 https://你的域名/install.php，并自动运行 install.php 脚本进行安装初始化</p>
+<p>初始化后，fileinfo 处于红色状态，此时需要在宝塔中安装此扩展</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210404409.png" alt="image-20211006210404409"></p>
+<p>点击软件商店—已安装—PHP设置</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211006210715502.png" alt="image-20211006210715502"></p>
+<p>安装fileinfo扩展</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210903747.png" alt="image-20211006210903747"></p>
+<p>安装完成后，重载配置，回到网站界面并刷新，可以发现红色标记已经消失</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006211057295.png" alt="image-20211006211057295"></p>
+<p>填入数据库名称、账号及密码（可在宝塔面板的数据库一栏查看），默认覆盖数据库，并测试数据库连接是否正确，自行设置管理员账号和密码（请保存好，以便后续登陆），勾选创建初始化数据，完成以上设置后（未说明的不需要更改），点击立即执行安装</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006211231542.png" alt="image-20211006211231542"></p>
+<h5 id="4、宝塔中重命名网站根目录的admin-php文件"><a href="#4、宝塔中重命名网站根目录的admin-php文件" class="headerlink" title="4、宝塔中重命名网站根目录的admin.php文件"></a>4、宝塔中重命名网站根目录的admin.php文件</h5><p>可以修改成任意名字，注意**.php**后缀不变</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006212217885.png" alt="image-20211006212217885"></p>
+<h5 id="5、登陆后台"><a href="#5、登陆后台" class="headerlink" title="5、登陆后台"></a>5、登陆后台</h5><p>完成第四步后，刷新就可以登陆进后台，如提示更新程序，更新即可</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-202110062126006259f7fa7a692ccc915.png" alt="image-20211006212600625"></p>
+<h5 id="6、采集资源"><a href="#6、采集资源" class="headerlink" title="6、采集资源"></a>6、采集资源</h5><p>点击采集—自定义接口—添加</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006212906033.png" alt="image-20211006212906033"></p>
+<p>自行谷歌影视资源采集站，并按提示进行填写</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-2021100621310271618c5b3c5efe49083.png" alt="image-20211006213102716"></p>
+<blockquote>
+<p>详尽配置可以参考<a href="https://www.bilibili.com/video/BV13A411Y7RX">CMS对接视频库</a></p>
+</blockquote>
+<h5 id="7、模板的使用"><a href="#7、模板的使用" class="headerlink" title="7、模板的使用"></a>7、模板的使用</h5><p>可以自行套用模板：<a href="http://www.maccms.cc/category/muban">模板参考</a></p>
+<blockquote>
+<p>替换教程模板里会有对用的教程提示</p>
+</blockquote>
+<hr>
+<h4 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h4><h5 id="1、搭建苹果-CMS-视频站"><a href="#1、搭建苹果-CMS-视频站" class="headerlink" title="1、搭建苹果 CMS 视频站"></a>1、<a href="https://ednovas.xyz/2021/06/11/applecms/">搭建苹果 CMS 视频站</a></h5><h5 id="2、CMS入门指南"><a href="#2、CMS入门指南" class="headerlink" title="2、CMS入门指南"></a>2、<a href="https://www.maccms.cn/doc/v10/index.html">CMS入门指南</a></h5>]]></content>
       <tags>
         <tag>学习</tag>
       </tags>
