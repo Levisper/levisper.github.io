@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-06T13:53:53.103Z</updated>
+  <updated>2021-10-06T15:03:52.190Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian系统安装||VMware虚拟机</title>
+    <link href="http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/"/>
+    <id>http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/</id>
+    <published>2021-10-06T14:00:05.000Z</published>
+    <updated>2021-10-06T15:03:52.190Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Debian 计划&lt;/a&gt;是一个致力于创建一个&lt;a href=&quot;https://www.debian.org/intro/free&quot;&gt;自由&lt;/a&gt;操作系统的合作组织，他们所创建的这个操作系统名为 &lt;strong&gt;Debian&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;操作系统是使计算机运行的基本程序和工具的集合，其中最主要的部分称为内核（kernel）。内核是计算机中最重要的程序，负责一切基本的调度工作，并让您运行其他程序。Debian 系统目前采用 &lt;a href=&quot;https://www.kernel.org/&quot;&gt;Linux&lt;/a&gt; 内核或者 &lt;a href=&quot;https://www.freebsd.org/&quot;&gt;FreeBSD&lt;/a&gt; 内核。&lt;/p&gt;
+&lt;p&gt;VMware虚拟机的存在能让我们在Windows系统中轻松体验Debian操作系统。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/06/image-20211006221141305.png&quot; alt=&quot;image-20211006221141305&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文讲述如何通过VMware虚拟机安装Debian系统。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>苹果CMS10搭建||视频站</title>
