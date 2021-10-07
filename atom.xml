@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-06T15:03:52.190Z</updated>
+  <updated>2021-10-07T01:33:51.491Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Debian系统安装||VMware虚拟机</title>
+    <title>VMware虚拟机安装Debian系统</title>
     <link href="http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/"/>
     <id>http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/</id>
     <published>2021-10-06T14:00:05.000Z</published>
-    <updated>2021-10-06T15:03:52.190Z</updated>
+    <updated>2021-10-07T01:33:51.491Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Debian 计划&lt;/a&gt;是一个致力于创建一个&lt;a href=&quot;https://www.debian.org/intro/free&quot;&gt;自由&lt;/a&gt;操作系统的合作组织，他们所创建的这个操作系统名为 &lt;strong&gt;Debian&lt;/strong&gt;。&lt;/p&gt;

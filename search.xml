@@ -484,7 +484,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Debian系统安装||VMware虚拟机</title>
+    <title>VMware虚拟机安装Debian系统</title>
     <url>/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/</url>
     <content><![CDATA[<p><a href="https://www.debian.org/">Debian 计划</a>是一个致力于创建一个<a href="https://www.debian.org/intro/free">自由</a>操作系统的合作组织，他们所创建的这个操作系统名为 <strong>Debian</strong>。</p>
 <p>操作系统是使计算机运行的基本程序和工具的集合，其中最主要的部分称为内核（kernel）。内核是计算机中最重要的程序，负责一切基本的调度工作，并让您运行其他程序。Debian 系统目前采用 <a href="https://www.kernel.org/">Linux</a> 内核或者 <a href="https://www.freebsd.org/">FreeBSD</a> 内核。</p>
