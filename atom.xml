@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-07T01:33:51.491Z</updated>
+  <updated>2021-10-07T06:26:09.030Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>youtube.dl配置</title>
+    <link href="http://example.com/2021/10/07/Youtube-dl%E9%85%8D/"/>
+    <id>http://example.com/2021/10/07/Youtube-dl%E9%85%8D/</id>
+    <published>2021-10-07T02:36:51.000Z</published>
+    <updated>2021-10-07T06:26:09.030Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://youtube-dl.org/&quot;&gt;youtube-dl&lt;/a&gt; 是一个命令行程序，用于从YouTube或其他网站下载视频。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不仅仅是油管，不要被程序名误导了&lt;/p&gt;
+&lt;p&gt;其他网站包括但不限于：BaiduVideo百度视频、BiliBili、BBC、CCTV央视网、CNN、iqiyi爱奇艺、kuwo酷我音乐、MSN、netease网易云音乐、qqmusicQQ音乐、xiami虾米音乐、ximalaya喜马拉雅FM、Yahoo、youku优酷、youtube等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;目前来讲，IDM同样也可以实现抓取油管视频，但不足之处是无法自动批量下载视频列表。而youtube-dl则实现了该功能，这也是它相对于IDM的优势所在。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/07/image-20211007134229566.png&quot; alt=&quot;image-20211007134229566&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>VMware虚拟机安装Debian系统</title>
