@@ -192,86 +192,11 @@
        
   <p>密码，和我们的日常生活息息相关。</p>
 <p>在互联网发达的今天，各类软件层出不穷，注册所带来的烦恼也随之而来。我们该使用怎么样的密码才安全？登录后的密码我们又该保存在哪里？除了经常使用的密码，能够记在心里，大部分的密码只是偶尔登陆时才会使用。</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/keepass-2-1.png" alt="keepass"></p>
-<p>在电脑上，我们第一印象可能是使用浏览器的自动储存密码功能，在注册大部分网站时，所使用的浏览器都会弹出储存密码的提示，例如谷歌浏览器、火狐浏览器等等。使用自动记忆功能，可以方便快捷地进行密码的储存和登录，而且密码往往是和你的账号绑定在一起，可以跨设备进行登录，是一个非常明显的优点。当然，缺点也有，你所保存的密码，只要使用者登录浏览器就可以查看到，这种储存密码的方式安全性一般，适用于普通的网站密码登录，如涉及到支付和重要平台的登录，切勿自动储存，密码很容易泄露出去。</p>
-<p>在不卸载重装软件的情况下，手机上的登录基本是一次性的，我们只需要把密码存放好即可。在很长的一段时间，笔者是记录在备忘录上面，利用华为账号的同步功能确保不会丢失忘记。刚开始记录的密码不多时，查找起来比较方便，但日积月累下来，密码数量越来越多，记录也越来越麻烦，而且自己有时也会忘记储存的关键词是什么，便决定放弃备忘录的方式。</p>
-<p>在查找相关的密码管理软件之后，发现此类软件数量繁多，口碑较好的有1Password、LastPass、KeePass、Bitwarden。前两者是收费软件，后两者是开源免费，1Password是用户评价最高的，唯一的缺点可能就是贵了，愿意付费的人并不多。LastPass的优势是跨浏览器平台，但只适用于浏览器网页登录，不具有普遍性，且刚开始是免费使用，目前也是收费了。对于KeePass和Bitwarden这两款软件来说，个人角度上讲，安全性都很好，而且也都是开源软件，看个人喜好选择即可。笔者先接触到的是KeePass，使用了较长一段时间，觉得很不错，特别喜欢KeePass手机上的自动填充功能，而对Bitwarden了解的较少，所以本文给大家安利KeePass这款软件。</p>
-<hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、KeePass下载"><a href="#1、KeePass下载" class="headerlink" title="1、KeePass下载"></a>1、KeePass下载</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://keepass.info/">PC版官网</a></p>
-</blockquote>
-<p>找到下载位置，可以选择打包好的，也可以自行安装，推荐选择2.xx的版本</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011212951466.png" alt="image-20211011212951466"></p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/PhilippC/keepass2android/releases/tag/1.09a-r3">安卓版KeePass2Android GitHub版 </a></p>
-<p><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android">KeePass2Android 谷歌商店版</a></p>
-</blockquote>
-<p>手机上推荐下载第三方客户端KeePass2Android ，更新比较勤快，使用也方便，可直接在谷歌商店下载</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011214117970.png" alt="image-20211011214117970"></p>
-<h5 id="2、注册坚果云账号并开启WebDAV"><a href="#2、注册坚果云账号并开启WebDAV" class="headerlink" title="2、注册坚果云账号并开启WebDAV"></a>2、注册坚果云账号并开启WebDAV</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.jianguoyun.com/">坚果云官网</a></p>
-</blockquote>
-<p>KeePass可以搭配坚果云实现多设备同步（结合坚果云第三方应用授权WebDAV）</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-202110112223083099f3be7bae2256e9f.png" alt="image-20211011222308309"></p>
-<p>登录你的坚果云账号</p>
-<p>点击右上角账户名处选择 【账户信息】，然后选择【安全选项】</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011222404534.png" alt="image-20211011222404534"></p>
-<p>在 “安全选项“ 中找到 第三方应用管理，并选择“添加应用密码“，输入名称如KeePass后，选择“生成密码”，选择完成</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011222459800.png" alt="image-20211011222459800"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011222748109.png" alt="image-20211011222748109"></p>
-<p>以后在其他设备连接KeePass时都可以使用这个应用密码</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011222818500.png" alt="image-20211011222818500"></p>
-<hr>
-<h4 id="二：配置KeePass数据库"><a href="#二：配置KeePass数据库" class="headerlink" title="二：配置KeePass数据库"></a>二：配置KeePass数据库</h4><h5 id="1、替换中文包"><a href="#1、替换中文包" class="headerlink" title="1、替换中文包"></a>1、替换中文包</h5><p>按默认选项安装KeePass，官方没有中文语言选项，但有开发者进行了翻译，官方也进行了收录，可以自行安装简体中文</p>
-<p>下载<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/keepass/files/Translations%202.x/2.46/KeePass-2.46-Chinese_Simplified.zip/download?use_mirror=udomain">中文语言包</a></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011224001939.png" alt="image-20211011224001939"></p>
-<p>点击主界面中的View→Change Language</p>
-<p>点击Open Folder，打开KeePass的语言安装文件夹，将解压好的语言包文件复制进去，重启软件，然后在Change Language一栏可以看到简体中文选项，勾选中文并确认重启</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011224441130.png" alt="image-20211011224441130"></p>
-<h5 id="2、创建数据库"><a href="#2、创建数据库" class="headerlink" title="2、创建数据库"></a>2、创建数据库</h5><blockquote>
-<p>KeePass的数据库可以只保存在本地，但是如果只放在电脑本地文件夹是不能够跨设备同步密码</p>
-<p>为了手机和电脑数据同步，我选择了将数据库文件放置在了坚果云的同步文件夹，实现两者的同步</p>
-</blockquote>
-<p>点击新建，会提示新建一个数据库</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011224750069.png" alt="image-20211011224750069"></p>
-<p>将数据库文件保存在一个本地文件夹中，文件名最好改成英文，例如：password.kdbx</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011225715571b4e2626ea2396a12.png" alt="image-20211011225715571"></p>
-<p>选择数据库保护方式，包括以下三种类型：主密码，密钥文件，Windows 用户帐户，三种方式可以叠加使用，这里我们选择其中一种即可，只设置一个主密码</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011225557537.png" alt="image-20211011225557537"></p>
-<p>此时，基本完成了数据库建立，我们可以通过KeePass打开本地的password.kdbx数据，查看到储存的密码。</p>
-<h5 id="3、将本地数据库文件（即password-kdbx）上传坚果云"><a href="#3、将本地数据库文件（即password-kdbx）上传坚果云" class="headerlink" title="3、将本地数据库文件（即password.kdbx）上传坚果云"></a>3、将本地数据库文件（即password.kdbx）上传坚果云</h5><p>先在网页版的坚果云新建一个英文名称的同步文件夹，例如我创建的是PassWord同步文件夹</p>
-<blockquote>
-<p><strong>URL地址不支持中文文件夹，一定要是英文名称</strong></p>
-</blockquote>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011230526248.png" alt="image-20211011230526248"></p>
-<p>将生成在本地的数据库文件password.kdbx上传至PassWord文件夹中</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011232921634.png" alt="image-20211011232921634"></p>
-<p>点击文件—打开—打开网址（URL）</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011233025115964d9ef504aad842.png" alt="image-20211011233025115"></p>
-<p>按照要求填写，网址需要包含自己的keepass密码库的具体位置</p>
-<blockquote>
-<p><strong>例如你的数据库放在坚果云的work文件下，密码库的文件名是：NewDatabase.kdbx，地址就是：<a target="_blank" rel="noopener" href="https://dav.jianguoyun.com/dav/work/NewDatabase.kdbx">https://dav.jianguoyun.com/dav/work/NewDatabase.kdbx</a></strong></p>
-<p><strong>用户名是坚果云注册邮箱号，密码是准备工作中的应用密码</strong></p>
-<p><strong>填写URL地址的时候大小写都要跟英文名称的文件夹保持一致</strong></p>
-</blockquote>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011233210052.png" alt="image-20211011233210052"></p>
-<p>然后输入KeePass主密码即可打开自己的密码库</p>
-<p>每次更新了密码之后，我们可以点击同步中的与网址同步，即可在手机上查看到同步的数据</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011234455909.png" alt="image-20211011234455909"></p>
-<p>完成该步骤后，我们可以不需要在本地存放数据库了，直接打开已经同步好的云数据库即可！</p>
-<h5 id="4、移动端KeePass2Android的同步方式"><a href="#4、移动端KeePass2Android的同步方式" class="headerlink" title="4、移动端KeePass2Android的同步方式"></a>4、移动端KeePass2Android的同步方式</h5><blockquote>
-<p>新版KeePass2Android不允许截图</p>
-</blockquote>
-<p>安装后首页就是可以选择打开方式，填写方式跟电脑端打开URL一样</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011234155275c338973e07f26632.png" alt="image-20211011234155275"></p>
-<p>登录WebDav，可以同步电脑的密码数据，可以开启指纹快速解锁，里面的设置中可以同步数据库</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011234259350.png" alt="image-20211011234259350"></p>
-<hr>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><p><a target="_blank" rel="noopener" href="https://help.jianguoyun.com/?p=2064">坚果云第三方应用授权WebDAV开启方法</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/39645975">一劳永逸：KeePass全网最详使用指南</a></p>
-<p><a target="_blank" rel="noopener" href="https://help.jianguoyun.com/?p=3348">KeePass如何搭配坚果云实现多设备同步？</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.chenweiliang.com/cwl-1356.html#cwl">KeePass怎么使用？汉化中文绿色版语言包安装设置</a></p>
- 
+<p><img src="https://pic.020810.xyz/images/2021/10/11/keepass-2-1.png" alt="keepass"></p> 
+      <a class="article-more-link" href="/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
