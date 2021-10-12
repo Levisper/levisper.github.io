@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-12T05:09:15.602Z</updated>
+  <updated>2021-10-12T05:14:07.902Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/10/12/win10%E5%8F%8Awin7%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E8%AE%BE/"/>
     <id>http://example.com/2021/10/12/win10%E5%8F%8Awin7%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E8%AE%BE/</id>
     <published>2021-10-12T04:22:30.000Z</published>
-    <updated>2021-10-12T05:09:15.602Z</updated>
+    <updated>2021-10-12T05:14:07.902Z</updated>
     
     
     <summary type="html">&lt;p&gt;开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网&lt;/p&gt;
@@ -30,8 +30,10 @@
     
     
     
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -40,7 +42,7 @@
     <link href="http://example.com/2021/10/12/KeePass%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/"/>
     <id>http://example.com/2021/10/12/KeePass%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</id>
     <published>2021-10-12T02:34:35.000Z</published>
-    <updated>2021-10-12T04:23:53.695Z</updated>
+    <updated>2021-10-12T05:13:59.113Z</updated>
     
     
     <summary type="html">&lt;p&gt;为了提高KeePass的使用体验，我们可以使用插件来优化。&lt;/p&gt;
@@ -49,8 +51,10 @@
     
     
     
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -59,7 +63,7 @@
     <link href="http://example.com/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/"/>
     <id>http://example.com/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/</id>
     <published>2021-10-11T11:30:30.000Z</published>
-    <updated>2021-10-12T04:23:43.521Z</updated>
+    <updated>2021-10-12T05:13:33.090Z</updated>
     
     
     <summary type="html">&lt;p&gt;​      密码，和我们的日常生活息息相关。&lt;/p&gt;
@@ -68,8 +72,10 @@
     
     
     
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
