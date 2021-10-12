@@ -650,16 +650,16 @@
       </tags>
   </entry>
   <entry>
-    <title>如何使用KeePass管理繁琐的密码||基础</title>
+    <title>KeePass密码管理部署配置||基础</title>
     <url>/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/</url>
-    <content><![CDATA[<p>密码，和我们的日常生活息息相关。</p>
-<p>在互联网发达的今天，各类软件层出不穷，注册所带来的烦恼也随之而来。我们该使用怎么样的密码才安全？登录后的密码我们又该保存在哪里？除了经常使用的密码，能够记在心里，大部分的密码只是偶尔登陆时才会使用。</p>
+    <content><![CDATA[<p>​      密码，和我们的日常生活息息相关。</p>
+<p>​      在互联网发达的今天，各类软件层出不穷，注册所带来的烦恼也随之而来。我们使用怎么样的密码才安全？登录后的密码我们又该存在何处？</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/11/keepass-2-1.png" alt="keepass"></p>
 <span id="more"></span>
 
-<p>在电脑上，我们第一印象可能是使用浏览器的自动储存密码功能，在注册大部分网站时，所使用的浏览器都会弹出储存密码的提示，例如谷歌浏览器、火狐浏览器等等。使用自动记忆功能，可以方便快捷地进行密码的储存和登录，而且密码往往是和你的账号绑定在一起，可以跨设备进行登录，是一个非常明显的优点。当然，缺点也有，你所保存的密码，只要使用者登录浏览器就可以查看到，这种储存密码的方式安全性一般，适用于普通的网站密码登录，如涉及到支付和重要平台的登录，切勿自动储存，密码很容易泄露出去。</p>
-<p>在不卸载重装软件的情况下，手机上的登录基本是一次性的，我们只需要把密码存放好即可。在很长的一段时间，笔者是记录在备忘录上面，利用华为账号的同步功能确保不会丢失忘记。刚开始记录的密码不多时，查找起来比较方便，但日积月累下来，密码数量越来越多，记录也越来越麻烦，而且自己有时也会忘记储存的关键词是什么，便决定放弃备忘录的方式。</p>
-<p>在查找相关的密码管理软件之后，发现此类软件数量繁多，口碑较好的有1Password、LastPass、KeePass、Bitwarden。前两者是收费软件，后两者是开源免费，1Password是用户评价最高的，唯一的缺点可能就是贵了，愿意付费的人并不多。LastPass的优势是跨浏览器平台，但只适用于浏览器网页登录，不具有普遍性，且刚开始是免费使用，目前也是收费了。对于KeePass和Bitwarden这两款软件来说，个人角度上讲，安全性都很好，而且也都是开源软件，看个人喜好选择即可。笔者先接触到的是KeePass，使用了较长一段时间，觉得很不错，特别喜欢KeePass手机上的自动填充功能，而对Bitwarden了解的较少，所以本文给大家安利KeePass这款软件。</p>
+<p>​       在电脑上，我们第一印象可能是使用浏览器的<strong>自动储存密码</strong>功能，在注册大部分网站时，所使用的浏览器都会弹出储存密码的提示，例如谷歌浏览器、火狐浏览器等等。使用自动记忆功能，可以方便快捷地进行密码的储存和登录，而且密码往往是和你的账号绑定在一起，可以跨设备进行登录，是一个非常明显的优点。当然，缺点也有，你所保存的密码，只要使用者登录浏览器就可以查看到，这种储存密码的方式安全性一般，适用于普通的网站密码登录，如涉及到支付和重要平台的登录，切勿自动储存，密码很容易泄露出去。</p>
+<p>​      手机上的登录基本是一次性的，我们只需要把密码存放好即可。在很长的一段时间，笔者是记录在备忘录上面，利用华为账号的同步功能确保不会丢失忘记。刚开始记录的密码不多时，查找起来比较方便，但日积月累下来，密码数量越来越多，记录也越来越麻烦，而且自己有时也会忘记储存的关键词是什么，便决定放弃备忘录的方式。</p>
+<p>​      在查找相关的密码管理软件之后，发现此类软件数量繁多，口碑较好的有<strong>1Password、LastPass、KeePass、Bitwarden</strong>。前两者是收费软件，后两者是开源免费，1Password是用户评价最高的，唯一的缺点可能就是贵了，愿意付费的人并不多。LastPass的优势是跨浏览器平台，但只适用于浏览器网页登录，不具有普遍性，且刚开始是免费使用，目前也是收费了。对于<strong>KeePass</strong>和<strong>Bitwarden</strong>这两款软件来说，个人角度上讲，安全性都很好，而且也都是开源软件，看个人喜好选择即可。笔者先接触到的是<strong>KeePass</strong>，使用了较长一段时间，觉得很不错，特别喜欢<strong>KeePass</strong>手机上的自动填充功能，而对<strong>Bitwarden</strong>了解的较少，所以本文给大家安利<strong>KeePass</strong>这款软件。</p>
 <hr>
 <h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、KeePass下载"><a href="#1、KeePass下载" class="headerlink" title="1、KeePass下载"></a>1、KeePass下载</h5><blockquote>
 <p><a href="https://keepass.info/">PC版官网</a></p>
@@ -695,6 +695,7 @@
 <h5 id="2、创建数据库"><a href="#2、创建数据库" class="headerlink" title="2、创建数据库"></a>2、创建数据库</h5><blockquote>
 <p>KeePass的数据库可以只保存在本地，但是如果只放在电脑本地文件夹是不能够跨设备同步密码</p>
 <p>为了手机和电脑数据同步，我选择了将数据库文件放置在了坚果云的同步文件夹，实现两者的同步</p>
+<p>熟悉使用onedrive的朋友，可以配置onedrive同步，和坚果云的WebDav也是一样的效果</p>
 </blockquote>
 <p>点击新建，会提示新建一个数据库</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011224750069.png" alt="image-20211011224750069"></p>
@@ -730,12 +731,69 @@
 <p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011234155275c338973e07f26632.png" alt="image-20211011234155275"></p>
 <p>登录WebDav，可以同步电脑的密码数据，可以开启指纹快速解锁，里面的设置中可以同步数据库</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211011234259350.png" alt="image-20211011234259350"></p>
+<p>进入登录界面，输入主密码</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012113558393.png" alt="image-20211012113558393"></p>
+<p>登录进数据库，进入数据库首页</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012113516594.png" alt="image-20211012113516594"></p>
+<p>填充密码一般有两种方式，一是使用Keepass2Android的输入法（比较难用），二是自动填充应用关联。</p>
+<p>下面以华为手机为例使用第二种自动填充应用关联：</p>
+<ul>
+<li>打开手机设置，并搜索：自动填充服务</li>
+</ul>
+<img src="https://pic.020810.xyz/images/2021/10/12/photo_2021-10-12_11-28-10.jpg"  />
+
+<ul>
+<li>进入后，选择keepass2Android</li>
+</ul>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/photo_2021-10-12_11-28-24.jpg" alt="photo_2021-10-12_11-28-24"></p>
+<ul>
+<li>设置好以后，我们测试登录百度账号，可以发现填写栏自动弹出：使用Keepass2Android填充</li>
+</ul>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012113837297.png" alt="image-20211012113837297"></p>
 <hr>
 <h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><p><a href="https://help.jianguoyun.com/?p=2064">坚果云第三方应用授权WebDAV开启方法</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/39645975">一劳永逸：KeePass全网最详使用指南</a></p>
 <p><a href="https://help.jianguoyun.com/?p=3348">KeePass如何搭配坚果云实现多设备同步？</a></p>
 <p><a href="https://www.chenweiliang.com/cwl-1356.html#cwl">KeePass怎么使用？汉化中文绿色版语言包安装设置</a></p>
 ]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>KeePass密码管理插件配置||进阶</title>
+    <url>/2021/10/12/KeePass%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>为了提高KeePass的使用体验，我们可以使用插件来优化。</p>
+<p>在官网中，有着种类繁多的插件，感兴趣的朋友可自行去探索研究。这里推荐使用KPEnhancedEntryView插件，特点是优化了记录视图，非常实用。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211012104314425.png" alt="image-20211012104314425"></p>
+<span id="more"></span>
+
+<hr>
+<h5 id="1、KPEnhancedEntryView下载"><a href="#1、KPEnhancedEntryView下载" class="headerlink" title="1、KPEnhancedEntryView下载"></a>1、KPEnhancedEntryView下载</h5><blockquote>
+<p><a href="https://sourceforge.net/projects/kpenhentryview/">官网下载</a></p>
+</blockquote>
+<p>下载压缩包到本地文件夹</p>
+<h5 id="2、解压插件到KeePass的目录"><a href="#2、解压插件到KeePass的目录" class="headerlink" title="2、解压插件到KeePass的目录"></a>2、解压插件到KeePass的目录</h5><p>点击工具—插件管理器</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211012105711429.png" alt="image-20211012105711429"></p>
+<p>点击打开文件夹</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211012105755947.png" alt="image-20211012105755947"></p>
+<p>找到插件文件夹路径，将插件移入</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/11/image-20211012105948077.png" alt="image-20211012105948077"></p>
+<p>重启软件后，我们便可以在插件管理器中看到KPEnhancedEntryView</p>
+<p>在KeePass的主界面中，单击【显示】→【窗口布局】→【平铺】</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012110400428.png" alt="image-20211012110400428"></p>
+<p>在KeePass的主界面中，单击【显示】→【列设置】，取消选中【标题】以外的所有选项→【确定】</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012110444329.png" alt="image-20211012110444329"></p>
+<p>对比效果图如下</p>
+<p>优化前：</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012111226953.png" alt="image-20211012111226953"></p>
+<p>优化后：</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012111415361.png" alt="image-20211012111415361"></p>
+<h5 id="3、插件更新检测"><a href="#3、插件更新检测" class="headerlink" title="3、插件更新检测"></a>3、插件更新检测</h5><p>点击帮助—检查更新</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012111838691.png" alt="image-20211012111838691"></p>
+<p>自动检测是否有更新，如有更新，可以跳转到官网下载新版，目前暂无在线更新</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/image-20211012111920425.png" alt="image-20211012111920425"></p>
+<h5 id="更多插件请点击这里"><a href="#更多插件请点击这里" class="headerlink" title="更多插件请点击这里"></a><strong><a href="https://keepass.info/plugins.html">更多插件请点击这里</a></strong></h5>]]></content>
       <tags>
         <tag>学习</tag>
       </tags>

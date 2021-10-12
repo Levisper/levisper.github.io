@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-11T16:03:00.806Z</updated>
+  <updated>2021-10-12T03:50:23.685Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,15 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>如何使用KeePass管理繁琐的密码||基础</title>
+    <title>KeePass密码管理插件配置||进阶</title>
+    <link href="http://example.com/2021/10/12/KeePass%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2021/10/12/KeePass%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-10-12T02:34:35.000Z</published>
+    <updated>2021-10-12T03:50:23.685Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;为了提高KeePass的使用体验，我们可以使用插件来优化。&lt;/p&gt;
+&lt;p&gt;在官网中，有着种类繁多的插件，感兴趣的朋友可自行去探索研究。这里推荐使用KPEnhancedEntryView插件，特点是优化了记录视图，非常实用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/11/image-20211012104314425.png&quot; alt=&quot;image-20211012104314425&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KeePass密码管理部署配置||基础</title>
     <link href="http://example.com/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/"/>
     <id>http://example.com/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/</id>
     <published>2021-10-11T11:30:30.000Z</published>
-    <updated>2021-10-11T16:03:00.806Z</updated>
+    <updated>2021-10-12T03:49:58.857Z</updated>
     
     
-    <summary type="html">&lt;p&gt;密码，和我们的日常生活息息相关。&lt;/p&gt;
-&lt;p&gt;在互联网发达的今天，各类软件层出不穷，注册所带来的烦恼也随之而来。我们该使用怎么样的密码才安全？登录后的密码我们又该保存在哪里？除了经常使用的密码，能够记在心里，大部分的密码只是偶尔登陆时才会使用。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;​      密码，和我们的日常生活息息相关。&lt;/p&gt;
+&lt;p&gt;​      在互联网发达的今天，各类软件层出不穷，注册所带来的烦恼也随之而来。我们使用怎么样的密码才安全？登录后的密码我们又该存在何处？&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/11/keepass-2-1.png&quot; alt=&quot;keepass&quot;&gt;&lt;/p&gt;</summary>
     
     
