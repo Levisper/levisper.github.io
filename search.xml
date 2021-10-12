@@ -798,4 +798,36 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>如何设置win10及win7的系统代理</title>
+    <url>/2021/10/12/win10%E5%8F%8Awin7%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E8%AE%BE/</url>
+    <content><![CDATA[<p>开启代理服务器后，常常会因为忘记关闭系统代理，导致浏览器不能正常上网</p>
+<p>对此，针对win10和win7系统，讲述如何手动关闭代理</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/8c2133bc59b7dea5a6fb40725fe9e4dc.jpg"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：Windows10"><a href="#一：Windows10" class="headerlink" title="一：Windows10"></a>一：Windows10</h4><p>设置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/897b5a83-4aec-4576-a11c-bd188b087d15-10805124.png" alt="image"></p>
+<p>网络和Internet</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/734cb407-0601-443c-8d5a-e6355bd928a1-10805124.png" alt="image"></p>
+<p>代理</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/b7bbe53a-20b1-4fc1-ae38-0d983d496cca-10805124.png" alt="image"></p>
+<p>关闭：使用代理服务器，即可正常浏览国内网站</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/f7df1ff4-8995-418c-8c5d-8c4ddbadee3f-10805124.png" alt="image"></p>
+<p>为便于以后打开代理设置，我们可以将“代理”固定到开始屏幕，右击“代理”，会弹出固定到“开始”屏幕</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/34365bdd-eae0-42b5-b0d6-b965dcfafee7-10805124.png" alt="image"></p>
+<p>点击：是</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/4179b5c1-cac7-4ebb-9ef8-22e279b3de56-10805124.png" alt="image"></p>
+<h4 id="二：Windows7"><a href="#二：Windows7" class="headerlink" title="二：Windows7"></a>二：Windows7</h4><p>依次点击【开始】→【控制面板】→【网络和 Internet】，点击【Internet 选项】</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/3166400b-b125-4e03-ab3d-37d245b235ad-10805124.png" alt="image"></p>
+<p>在【Internet 选项】对话框下，点击【连接】选项卡，然后点击【局域网设置】按钮</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/6e3c1cfa-5c21-4a6e-94bf-42f079416b07-10805124.png" alt="image"></p>
+<p>在弹出的【局域网（LAN）设置】对话框下，取消勾选【为 LAN 使用代理服务器】，即可正常浏览国内网站</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/12/57dde23a-0a13-43eb-81cd-bbbcafd137b3-10805124.png" alt="image"></p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
 </search>
