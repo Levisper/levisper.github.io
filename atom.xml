@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-26T14:08:44.751Z</updated>
+  <updated>2021-10-26T15:47:14.356Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/10/26/%E5%8F%AF%E4%B9%90%E6%8E%A2%E9%92%88%E7%9B%91%E6%8E%A7/"/>
     <id>http://example.com/2021/10/26/%E5%8F%AF%E4%B9%90%E6%8E%A2%E9%92%88%E7%9B%91%E6%8E%A7/</id>
     <published>2021-10-26T12:05:49.000Z</published>
-    <updated>2021-10-26T14:08:44.751Z</updated>
+    <updated>2021-10-26T15:47:14.356Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/CokeMine/ServerStatus-Hotaru&quot;&gt;可乐探针&lt;/a&gt;是作者Hotaru基于ServerStatus-Toyo最新版本稍作修改的开源服务器监控程序。&lt;/p&gt;

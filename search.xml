@@ -864,17 +864,17 @@
 <p><strong>选择1，安装服务端；设置监听端口（自由设定，默认35601）；配置HTTP服务，输入“N”，选择手动部署</strong>；显示启动成功则表示服务端安装完成。</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026211322145.png" alt="image-20211026211322145"></p>
 <h5 id="2、配置探针域名"><a href="#2、配置探针域名" class="headerlink" title="2、配置探针域名"></a>2、配置探针域名</h5><p>进入宝塔的安全面板，放行35601端口</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026202806475.png" alt="image-20211026202806475"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026202806475.png" alt="image-20211026202806475"></p>
 <p>点击网站，添加站点，将解析的域名填入，<strong>PHP选择纯静态</strong></p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203159887.png" alt="image-20211026203159887"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026203159887.png" alt="image-20211026203159887"></p>
 <p>打开网站设置，申请ssl证书，并开启强制HTTPS</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203315358.png" alt="image-20211026203315358"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026203315358.png" alt="image-20211026203315358"></p>
 <p>浏览器输入域名访问，若显示下图，则表示站点创建成功</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203411946.png" alt="image-20211026203411946"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026203411946.png" alt="image-20211026203411946"></p>
 <p>依次输入以下三条命令，将探针部署到网站上，<strong>注释中的域名填入你自己解析好的，其中第二行命令是要填两次域名</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /www/wwwroot</span><br><span class="line">mv 域名 域名_bak</span><br><span class="line">ln -s /usr/local/ServerStatus/web 域名</span><br></pre></td></tr></table></figure>
 
-<p>浏览器重新访问域名，已经变成可乐探针面板了。这时，我们可以去开启CF的小云朵，以便域名不会直接指向我们的服务器IP<img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203626150.png" alt="image-20211026203626150"></p>
+<p>浏览器重新访问域名，已经变成可乐探针面板了。这时，我们可以去开启CF的小云朵，以便域名不会直接指向我们的服务器IP<img src="https://pic.020810.xyz/images/2021/10/26/image-20211026203626150.png" alt="image-20211026203626150"></p>
 <h5 id="3、安装ServerStatus客户端"><a href="#3、安装ServerStatus客户端" class="headerlink" title="3、安装ServerStatus客户端"></a>3、安装ServerStatus客户端</h5><p>部署客户端之前，需要进行服务端的用户设定，设定一个用户名和密码</p>
 <p>按照第一步的命令，我们进入服务端面板配置</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/cokemine/ServerStatus-Hotaru/master/status.sh</span><br><span class="line">bash status.sh s</span><br></pre></td></tr></table></figure>
