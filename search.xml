@@ -840,8 +840,79 @@
       </tags>
   </entry>
   <entry>
-    <title>哪吒面板监控服务</title>
-    <url>/2021/10/23/%E5%93%AA%E5%90%92%E9%9D%A2%E6%9D%BF%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A11/</url>
+    <title>可乐探针||服务器监控</title>
+    <url>/2021/10/26/%E5%8F%AF%E4%B9%90%E6%8E%A2%E9%92%88%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<p><a href="https://github.com/CokeMine/ServerStatus-Hotaru">可乐探针</a>是作者Hotaru基于ServerStatus-Toyo最新版本稍作修改的开源服务器监控程序。</p>
+<p>通过宝塔，我们可以很方便地部署到服务器上，用于监控内存、流量和负载等多项状态。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026205332719.png" alt="image-20211026205332719"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、宝塔安装"><a href="#1、宝塔安装" class="headerlink" title="1、宝塔安装"></a>1、宝塔安装</h5><p><a href="https://www.bt.cn/download/linux.html">宝塔官网</a></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211024145610554.png" alt="image-20211024145610554"></p>
+<blockquote>
+<p>注意安装好系统环境：Nginx、MySQL、PHP（最好是版本7.x）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026211925563.png" alt="image-20211026211925563"></p>
+</blockquote>
+<h5 id="2、域名解析"><a href="#2、域名解析" class="headerlink" title="2、域名解析"></a>2、域名解析</h5><p>准备一个二级域名，在<a href="https://blog.misaka.sbs/category/cloudflare">CloudFlare</a>上解析到服务器IP（A类型，小云朵先不开启）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026210227067.png" alt="image-20211026210227067"></p>
+<hr>
+<h4 id="二：部署工作"><a href="#二：部署工作" class="headerlink" title="二：部署工作"></a>二：部署工作</h4><h5 id="1、安装ServerStatus服务端"><a href="#1、安装ServerStatus服务端" class="headerlink" title="1、安装ServerStatus服务端"></a>1、安装ServerStatus服务端</h5><p>在VPS的SSH端依次输入以下两条命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/cokemine/ServerStatus-Hotaru/master/status.sh</span><br><span class="line">bash status.sh s</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026210840494.png" alt="image-20211026210840494"></p>
+<p><strong>选择1，安装服务端；设置监听端口（自由设定，默认35601）；配置HTTP服务，输入“N”，选择手动部署</strong>；显示启动成功则表示服务端安装完成。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026211322145.png" alt="image-20211026211322145"></p>
+<h5 id="2、配置探针域名"><a href="#2、配置探针域名" class="headerlink" title="2、配置探针域名"></a>2、配置探针域名</h5><p>进入宝塔的安全面板，放行35601端口</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026202806475.png" alt="image-20211026202806475"></p>
+<p>点击网站，添加站点，将解析的域名填入，<strong>PHP选择纯静态</strong></p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203159887.png" alt="image-20211026203159887"></p>
+<p>打开网站设置，申请ssl证书，并开启强制HTTPS</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203315358.png" alt="image-20211026203315358"></p>
+<p>浏览器输入域名访问，若显示下图，则表示站点创建成功</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203411946.png" alt="image-20211026203411946"></p>
+<p>依次输入以下三条命令，将探针部署到网站上，<strong>注释中的域名填入你自己解析好的，其中第二行命令是要填两次域名</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /www/wwwroot</span><br><span class="line">mv 域名 域名_bak</span><br><span class="line">ln -s /usr/local/ServerStatus/web 域名</span><br></pre></td></tr></table></figure>
+
+<p>浏览器重新访问域名，已经变成可乐探针面板了。这时，我们可以去开启CF的小云朵，以便域名不会直接指向我们的服务器IP<img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211026203626150.png" alt="image-20211026203626150"></p>
+<h5 id="3、安装ServerStatus客户端"><a href="#3、安装ServerStatus客户端" class="headerlink" title="3、安装ServerStatus客户端"></a>3、安装ServerStatus客户端</h5><p>部署客户端之前，需要进行服务端的用户设定，设定一个用户名和密码</p>
+<p>按照第一步的命令，我们进入服务端面板配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/cokemine/ServerStatus-Hotaru/master/status.sh</span><br><span class="line">bash status.sh s</span><br></pre></td></tr></table></figure>
+
+<p>选择7，进入服务端配置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026214032857.png" alt="image-20211026214032857"></p>
+<p>选择1，进行节点配置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026214237855.png" alt="image-20211026214237855"></p>
+<p>这里设定你的用户名和密码（注：这两个是你配置客户端时所需要填写的信息），以及服务端的节点名称、虚拟化类型、节点地区和位置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026214854990.png" alt="image-20211026214854990"></p>
+<p>完成以上服务端的配置后，我们可以开始在本机部署客户端，用于监控VPS</p>
+<p>输入以下命令，进入客户端部署（<strong>以后想添加更多机器进来，从这里开始部署</strong>）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/cokemine/ServerStatus-Hotaru/master/status.sh</span><br><span class="line">bash status.sh c</span><br></pre></td></tr></table></figure>
+
+<p>选择1，安装客户端</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026215103406.png" alt="image-20211026215103406"></p>
+<p>下载源默认选择GitHub</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026215205367.png" alt="image-20211026215205367"></p>
+<p>按照要求填入信息，其中用户名和密码是上面已经设定好的</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026215416468.png" alt="image-20211026215416468"></p>
+<p>对于流量监控这里，如果是对流量计算有清零需求，可以选择Y，中途运行可能会跳出选择网卡，选择eth0即可</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026215541125.png" alt="image-20211026215541125"></p>
+<p>操作完上述所有步骤以后，我们可以刷新域名，可以看见VPS的运行状态了</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026220156207.png" alt="image-20211026220156207"></p>
+<hr>
+<h5 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h5><p><a href="https://tlanyan.me/vps-serverstatus-hotaru-guide/">服务器探针、云监控程序ServerStatus-Hotaru安装配置教程</a></p>
+<p><a href="https://blog.misaka.sbs/202110/132.html?__cf_chl_jschl_tk__=pmd_Wngva5NIBLlEMT.o4n0nSR5oFDUfAFOusieIVlBcpdM-1635251100-0-gqNtZGzNAlCjcnBszQkl">如何搭建并使用ServerStatus探针，实现手上的VPS的全面监控</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哪吒探针||服务器监控</title>
+    <url>/2021/10/23/%E5%93%AA%E5%90%92%E9%9D%A2%E6%9D%BF%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1/</url>
     <content><![CDATA[<p><a href="https://github.com/naiba/nezha"><strong>哪吒监控</strong></a>是一款开源的服务器监控程序，功能齐全，UI美观，有多款主题可选。</p>
 <p>我们可以使用宝塔轻松部署哪吒面板，实现用域名访问服务器状态页。</p>
 <p>默认主题如下图所示</p>
