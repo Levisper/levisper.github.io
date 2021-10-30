@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-26T15:47:14.356Z</updated>
+  <updated>2021-10-30T15:42:39.966Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>YOURLS短链服务搭建</title>
+    <link href="http://example.com/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-10-30T12:38:47.000Z</published>
+    <updated>2021-10-30T15:42:39.966Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/YOURLS/YOURLS&quot;&gt;YOURLS&lt;/a&gt; 是一款开源免费的PHP脚本，我们可以通过它来搭建自己的短链服务。&lt;/p&gt;
+&lt;p&gt;其特点是可以创建网址短链，拥有自定义功能的插件和主题，并且可以分析统计数据，包含历史点击报告、引荐来源跟踪、访问者地理位置等等。&lt;/p&gt;
+&lt;p&gt;本文介绍如何通过宝塔面板搭建短链服务。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/10/30/image-20211030221536619.png&quot; alt=&quot;image-20211030221536619&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>可乐探针||服务器监控</title>
@@ -124,8 +146,8 @@
   
   <entry>
     <title>youtube.dl配置</title>
-    <link href="http://example.com/2021/10/07/Youtube-dl%E9%85%8D/"/>
-    <id>http://example.com/2021/10/07/Youtube-dl%E9%85%8D/</id>
+    <link href="http://example.com/2021/10/07/youtube-dl%E9%85%8D%E7%BD%AE/"/>
+    <id>http://example.com/2021/10/07/youtube-dl%E9%85%8D%E7%BD%AE/</id>
     <published>2021-10-07T02:36:51.000Z</published>
     <updated>2021-10-07T06:27:13.101Z</updated>
     

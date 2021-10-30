@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>youtube.dl配置 |  erenの小屋</title>
+      <title>YOURLS短链服务搭建 |  erenの小屋</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -51,7 +51,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Youtube-dl配"
+  id="post-Yourls短链服务搭建"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -62,7 +62,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  youtube.dl配置
+  YOURLS短链服务搭建
 </h1>
  
 
@@ -70,15 +70,19 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2021/10/07/Youtube-dl%E9%85%8D/" class="article-date">
-  <time datetime="2021-10-07T02:36:51.000Z" itemprop="datePublished">2021-10-07</time>
-</a>   
+      <a href="/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/" class="article-date">
+  <time datetime="2021-10-30T12:38:47.000Z" itemprop="datePublished">2021-10-30</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">662</span>
+            <span class="post-count">943</span>
         </span>
     </span>
 
@@ -87,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">3 分钟</span>
         </span>
     </span>
 </div>
@@ -102,54 +106,63 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p><a target="_blank" rel="noopener" href="https://youtube-dl.org/">youtube-dl</a> 是一个命令行程序，用于从YouTube或其他网站下载视频。</p>
-<blockquote>
-<p>不仅仅是油管，不要被程序名误导了</p>
-<p>其他网站包括但不限于：BaiduVideo百度视频、BiliBili、BBC、CCTV央视网、CNN、iqiyi爱奇艺、kuwo酷我音乐、MSN、netease网易云音乐、qqmusicQQ音乐、xiami虾米音乐、ximalaya喜马拉雅FM、Yahoo、youku优酷、youtube等。</p>
-</blockquote>
-<p>目前来讲，IDM同样也可以实现抓取油管视频，但不足之处是无法自动批量下载视频列表。而youtube-dl则实现了该功能，这也是它相对于IDM的优势所在。</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/image-20211007134229566.png" alt="image-20211007134229566"></p>
+  <p><a target="_blank" rel="noopener" href="https://github.com/YOURLS/YOURLS">YOURLS</a> 是一款开源免费的PHP脚本，我们可以通过它来搭建自己的短链服务。</p>
+<p>其特点是可以创建网址短链，拥有自定义功能的插件和主题，并且可以分析统计数据，包含历史点击报告、引荐来源跟踪、访问者地理位置等等。</p>
+<p>本文介绍如何通过宝塔面板搭建短链服务。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030221536619.png" alt="image-20211030221536619"></p>
 <span id="more"></span>
 
 <hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、youtube-dl下载"><a href="#1、youtube-dl下载" class="headerlink" title="1、youtube-dl下载"></a>1、youtube-dl下载</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://youtube-dl.org/">官网</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl/releases/tag/2021.06.06/">GitHub</a></p>
-</blockquote>
-<h5 id="2、Python环境配置"><a href="#2、Python环境配置" class="headerlink" title="2、Python环境配置"></a>2、Python环境配置</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.python.org/">官网</a></p>
-</blockquote>
-<p>选择最新版，并进行默认安装，<strong>勾选配置环境变量</strong></p>
-<h5 id="3、ffmpeg下载安装"><a href="#3、ffmpeg下载安装" class="headerlink" title="3、ffmpeg下载安装"></a>3、ffmpeg下载安装</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.gyan.dev/ffmpeg/builds/">官网</a></p>
-</blockquote>
-<p>根据下图对应的压缩包下载到本地<img src="https://pic.020810.xyz/images/2021/10/07/5b06ab2c-fa5a-417b-b5e5-28b22e9d7cdb-10805124.png" alt="image"></p>
-<p>解压安装包，将里面的bin文件中的三个.exe文件移到和youtube.dl同一目录下（可在C盘，也可在其他盘</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/dc1a5df0-8d56-4b63-a123-c5dfd0cb3a65-10805124.png" alt="image"></p>
-<p>更改环境变量：控制面板&gt;系统和安全&gt;系统&gt;高级系统设置&gt;环境变量</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/909c9f7c-35bb-4acb-94ca-93f575110362-10805124.png" alt="image"></p>
-<p>在环境变量&gt;系统变量里找到Path，点击编辑&gt;新建，然后把三个软件的路径复制到里面，参照下图</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/5ace5a82-2ad9-45cc-bdda-0e27db3056bd-10805124.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/b78f75ac-890a-45b2-954d-a46894ebb396-10805124.png" alt="image"></p>
-<p>打开Win+R，输入cmd，回车，输入命令ffmpeg -version，如果出现如下图所示的版本号信息，则表明FFmpeg安装成功，你可以在命令提示行中任意文件夹下运行FFmpeg</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/97065114-332d-46a1-bc84-ed8c29661afc-10805124.png" alt="image"></p>
-<h5 id="4、aria2下载"><a href="#4、aria2下载" class="headerlink" title="4、aria2下载"></a>4、aria2下载</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/aria2/aria2/releases/tag/release-1.35.0">GitHub</a></p>
-</blockquote>
-<p>下载后解压至和youtube-dl同一目录下，环境路径在第三步已经配置好了<img src="https://pic.020810.xyz/images/2021/10/07/b870fc6b-b927-4b5b-b485-6a270e365e93-1080512417307ab9cda3ddcb.png" alt="image"></p>
-<hr>
-<h4 id="二：入门使用"><a href="#二：入门使用" class="headerlink" title="二：入门使用"></a>二：入门使用</h4><h5 id="1、打开Powershell"><a href="#1、打开Powershell" class="headerlink" title="1、打开Powershell"></a>1、打开Powershell</h5><p>打开youtube-dl的文件夹，在空白处按住 “shift”键并点击右键，在快捷菜单中选择 “在此处打开 Powershell 窗口”</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/b79209ef-e6bd-4240-83ef-bb6361c707b4-10805124.png" alt="image"></p>
-<p>接着，在 Powershell 窗口中输入 “cmd”并按下回车键，这时候就可以在 Powershell 窗口中输入 cmd 命令了，youtube-dl 需要使用 cmd 来调用。到了这里，就可以用 youtube-dl 来下载视频了</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/07/cb3bd9c6-811c-42e6-aa7b-79a2c12f7d18-10805124.png" alt="image"></p>
-<h5 id="2、命令语句"><a href="#2、命令语句" class="headerlink" title="2、命令语句"></a>2、命令语句</h5><p>结合其GitHub的<a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl">使用文档</a>，可以了解到下载视频的命令语句</p>
-<p>常用命令格式：<code>youtube-dl [OPTIONS] URL [URL...]</code></p>
-<p>示例：<code>youtube-dl -f best url(视频网址)</code>，此命令适用于绝大多数网站视频下载</p>
-<h5 id="3、调用aria2加速下载"><a href="#3、调用aria2加速下载" class="headerlink" title="3、调用aria2加速下载"></a>3、调用aria2加速下载</h5><p>国内视频：<code>youtube-dl -f best url --external-downloader aria2c --external-downloader-args &quot;-x 16  -k 1M&quot;</code></p>
-<p>国外视频：<code>youtube-dl -f best url --external-downloader aria2c --external-downloader-args &quot;--all-proxy=http://127.0.0.1:端口 --file-allocation=prealloc -x 16 -k 1M&quot;</code></p>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、宝塔安装"><a href="#1、宝塔安装" class="headerlink" title="1、宝塔安装"></a>1、宝塔安装</h5><p><a target="_blank" rel="noopener" href="https://www.bt.cn/download/linux.html">宝塔官网</a></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211024145610554.png" alt="image-20211024145610554"></p>
 <blockquote>
-<p><strong>此处的端口根据不同代理填写</strong></p>
+<p>注意安装好系统环境：Nginx、MySQL5.6及以上、PHP（最好是版本7.x）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026211925563.png" alt="image-20211026211925563"></p>
 </blockquote>
+<h5 id="2、域名解析"><a href="#2、域名解析" class="headerlink" title="2、域名解析"></a>2、域名解析</h5><p>准备一个简短的二级域名，在<a target="_blank" rel="noopener" href="https://blog.misaka.sbs/category/cloudflare">CloudFlare</a>上解析到服务器IP（A类型，小云朵暂不开启）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/26/image-20211026210227067.png" alt="image-20211026210227067"></p>
+<h5 id="3、YOURLS的安装包和汉化语言包下载"><a href="#3、YOURLS的安装包和汉化语言包下载" class="headerlink" title="3、YOURLS的安装包和汉化语言包下载"></a>3、YOURLS的安装包和汉化语言包下载</h5><p><a target="_blank" rel="noopener" href="https://github.com/YOURLS/YOURLS/releases/tag/1.8.2">YOURLS GitHub</a></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030222652610.png" alt="image-20211030222652610"></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ZvonimirSun/YOURLS-zh_CN/releases/tag/v1.7.3">汉化文件</a></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030222824668.png" alt="image-20211030222824668"></p>
+<p>下载好文件到本地，以备后用</p>
+<hr>
+<h4 id="二：短链部署"><a href="#二：短链部署" class="headerlink" title="二：短链部署"></a>二：短链部署</h4><h5 id="1、添加网站，并申请ssl"><a href="#1、添加网站，并申请ssl" class="headerlink" title="1、添加网站，并申请ssl"></a>1、添加网站，并申请ssl</h5><p>打开宝塔面板的网站页面，添加站点，在下图中输入你提前解析好的域名，选择数据库以及PHP</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205341971.png" alt="image-20211030205341971"></p>
+<p>添加好之后，点击部署SSL，申请证书后，开启强制HTTPS</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205424271.png" alt="image-20211030205424271"></p>
+<h5 id="2、配置Nginx"><a href="#2、配置Nginx" class="headerlink" title="2、配置Nginx"></a>2、配置Nginx</h5><p>将以下代码复制粘贴到相应位置，保存</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location / &#123;</span><br><span class="line">   try_files $uri $uri/ /yourls-loader.php$is_args$args;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205601113.png" alt="image-20211030205601113"></p>
+<h5 id="3、上传YOURLS程序"><a href="#3、上传YOURLS程序" class="headerlink" title="3、上传YOURLS程序"></a>3、上传YOURLS程序</h5><p>上传文件到网站根目录下，解压后，删除压缩包</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205731019.png" alt="image-20211030205731019"></p>
+<p>打开解压好的文件夹，全选文件，将文件夹里所有文件剪切粘贴到根目录下（即/www/wwwroot/dl.lin.bike）</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030210435009.png" alt="image-20211030210435009"></p>
+<p>打开user文件夹，找到config-sample.php，将其重命名为 config.php</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205837799.png" alt="image-20211030205837799"></p>
+<h5 id="4、编辑config-php文件"><a href="#4、编辑config-php文件" class="headerlink" title="4、编辑config.php文件"></a>4、编辑config.php文件</h5><p>双击该配置文件，进行以下修改</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030210153734.png" alt="image-20211030210153734"></p>
+<p>对照下面参数提示，将数据库的用户名，密码，名称，域名如果是申请了SSL证书，需要更改成https</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">define( &#x27;YOURLS_DB_USER&#x27;, &#x27;【数据库用户名】&#x27; );</span><br><span class="line"></span><br><span class="line">/** MySQL database password */</span><br><span class="line">define( &#x27;YOURLS_DB_PASS&#x27;, &#x27;【数据库密码】&#x27; );</span><br><span class="line"></span><br><span class="line">/** The name of the database for YOURLS */</span><br><span class="line">define( &#x27;YOURLS_DB_NAME&#x27;, &#x27;【数据库名】&#x27; );</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_SITE&#x27;, &#x27;【域名】https://short.guozh.net&#x27; );</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_COOKIEKEY&#x27;, &#x27;【自己生成】&#x27; );</span><br><span class="line"></span><br><span class="line">$yourls_user_passwords = array(</span><br><span class="line">	&#x27;【用户名】&#x27; =&gt; &#x27;【密码】&#x27;,</span><br><span class="line">	// &#x27;username2&#x27; =&gt; &#x27;password2&#x27;,</span><br><span class="line">	// You can have one or more &#x27;login&#x27;=&gt;&#x27;password&#x27; lines</span><br><span class="line">	);</span><br></pre></td></tr></table></figure>
+
+<p>打开 <a target="_blank" rel="noopener" href="http://yourls.org/cookie">http://yourls.org/cookie</a> 网站，即可生成【YOURLS_COOKIEKEY】，复制下图信息，填入到config.php文件中</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205922498.png" alt="image-20211030205922498"></p>
+<p>登陆网站的用户名和密码自行设定，用于网页后台管理</p>
+<p>网站的语言项默认是英语，如果我们接下来要汉化的话，就需要先在config.php中更改成如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">define( &#x27;YOURLS_HOURS_OFFSET&#x27;, +8 );#这一条是时区，文件中没有，可以自行加上</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_LANG&#x27;, &#x27;zh_CN&#x27; );</span><br></pre></td></tr></table></figure>
+
+<h5 id="5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）"><a href="#5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）" class="headerlink" title="5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）"></a>5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）</h5><p>同样的，将下载好的压缩包解压到根目录下，把里面的两个文件剪切放到user下的languages文件夹中，完成后压缩包进行删除</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030232735846.png" alt="image-20211030232735846"></p>
+<h5 id="6、配置网站"><a href="#6、配置网站" class="headerlink" title="6、配置网站"></a>6、配置网站</h5><p>完成以上步骤后，我们在浏览器中输入<code>https://网站域名/admin</code>，输入用户名和密码，即可进入面板</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030211443517.png" alt="image-20211030211443517"></p>
+<p>短链的生成，默认是在域名后面从1开始增加，如果要更改成随机字母数字，我们可以在此处激活插件中的Random ShortURLs</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030211814175.png" alt="image-20211030211814175"></p>
+<p>更换<a target="_blank" rel="noopener" href="https://github.com/Flynntes/Sleeky">Sleeky</a>主题，下载压缩包文件并上传至根目录，前端只需要将sleeky-frontend中的文件复制到yourls网站根目录即可，后端则需要将 sleeky-backend文件夹放到yourls目录下的 user/plugins 中，重新进去网站后，可以在插件中找到Sleeky，激活主题插件即可</p>
+<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030233700579.png" alt="image-20211030233700579"></p>
+<hr>
+<h4 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h4><p><a target="_blank" rel="noopener" href="https://guozh.net/yourls-install-short-url/">yourls 结合宝塔搭建私人短链接服务</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zatp.com/post/build-short-url-with-yourls/#cl-4">使用yourls搭建短链接生成工具</a></p>
  
       <!-- reward -->
       
@@ -198,7 +211,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/10/07/Youtube-dl%E9%85%8D/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -211,19 +224,10 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            KeePass密码管理部署配置||基础
-          
-        </div>
-      </a>
     
-    
-      <a href="/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/" class="article-nav-link">
+      <a href="/2021/10/26/%E5%8F%AF%E4%B9%90%E6%8E%A2%E9%92%88%E7%9B%91%E6%8E%A7/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">VMware虚拟机安装Debian系统</div>
+        <div class="article-nav-title">可乐探针||服务器监控</div>
       </a>
     
   </nav>
