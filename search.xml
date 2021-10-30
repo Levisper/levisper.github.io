@@ -946,7 +946,6 @@
     <url>/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p><a href="https://github.com/YOURLS/YOURLS">YOURLS</a> 是一款开源免费的PHP脚本，我们可以通过它来搭建自己的短链服务。</p>
 <p>其特点是可以创建网址短链，拥有自定义功能的插件和主题，并且可以分析统计数据，包含历史点击报告、引荐来源跟踪、访问者地理位置等等。</p>
-<p>本文介绍如何通过宝塔面板搭建短链服务。</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030221536619.png" alt="image-20211030221536619"></p>
 <span id="more"></span>
 
@@ -974,30 +973,30 @@
 
 <p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205601113.png" alt="image-20211030205601113"></p>
 <h5 id="3、上传YOURLS程序"><a href="#3、上传YOURLS程序" class="headerlink" title="3、上传YOURLS程序"></a>3、上传YOURLS程序</h5><p>上传文件到网站根目录下，解压后，删除压缩包</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205731019.png" alt="image-20211030205731019"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205731019.png" alt="image-20211030205731019"></p>
 <p>打开解压好的文件夹，全选文件，将文件夹里所有文件剪切粘贴到根目录下（即/www/wwwroot/dl.lin.bike）</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030210435009.png" alt="image-20211030210435009"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-202110302104350097408262fdee5d66d.png" alt="image-20211030210435009"></p>
 <p>打开user文件夹，找到config-sample.php，将其重命名为 config.php</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205837799.png" alt="image-20211030205837799"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205837799.png" alt="image-20211030205837799"></p>
 <h5 id="4、编辑config-php文件"><a href="#4、编辑config-php文件" class="headerlink" title="4、编辑config.php文件"></a>4、编辑config.php文件</h5><p>双击该配置文件，进行以下修改</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030210153734.png" alt="image-20211030210153734"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030210153734.png" alt="image-20211030210153734"></p>
 <p>对照下面参数提示，将数据库的用户名，密码，名称，域名如果是申请了SSL证书，需要更改成https</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">define( &#x27;YOURLS_DB_USER&#x27;, &#x27;【数据库用户名】&#x27; );</span><br><span class="line"></span><br><span class="line">/** MySQL database password */</span><br><span class="line">define( &#x27;YOURLS_DB_PASS&#x27;, &#x27;【数据库密码】&#x27; );</span><br><span class="line"></span><br><span class="line">/** The name of the database for YOURLS */</span><br><span class="line">define( &#x27;YOURLS_DB_NAME&#x27;, &#x27;【数据库名】&#x27; );</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_SITE&#x27;, &#x27;【域名】https://short.guozh.net&#x27; );</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_COOKIEKEY&#x27;, &#x27;【自己生成】&#x27; );</span><br><span class="line"></span><br><span class="line">$yourls_user_passwords = array(</span><br><span class="line">	&#x27;【用户名】&#x27; =&gt; &#x27;【密码】&#x27;,</span><br><span class="line">	// &#x27;username2&#x27; =&gt; &#x27;password2&#x27;,</span><br><span class="line">	// You can have one or more &#x27;login&#x27;=&gt;&#x27;password&#x27; lines</span><br><span class="line">	);</span><br></pre></td></tr></table></figure>
 
 <p>打开 <a href="http://yourls.org/cookie">http://yourls.org/cookie</a> 网站，即可生成【YOURLS_COOKIEKEY】，复制下图信息，填入到config.php文件中</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030205922498.png" alt="image-20211030205922498"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030205922498.png" alt="image-20211030205922498"></p>
 <p>登陆网站的用户名和密码自行设定，用于网页后台管理</p>
 <p>网站的语言项默认是英语，如果我们接下来要汉化的话，就需要先在config.php中更改成如下</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">define( &#x27;YOURLS_HOURS_OFFSET&#x27;, +8 );#这一条是时区，文件中没有，可以自行加上</span><br><span class="line"></span><br><span class="line">define( &#x27;YOURLS_LANG&#x27;, &#x27;zh_CN&#x27; );</span><br></pre></td></tr></table></figure>
 
 <h5 id="5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）"><a href="#5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）" class="headerlink" title="5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）"></a>5、配置中文包（此项为非必须项，如果前面默认不更改语言，可以忽略汉化步骤）</h5><p>同样的，将下载好的压缩包解压到根目录下，把里面的两个文件剪切放到user下的languages文件夹中，完成后压缩包进行删除</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030232735846.png" alt="image-20211030232735846"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030232735846.png" alt="image-20211030232735846"></p>
 <h5 id="6、配置网站"><a href="#6、配置网站" class="headerlink" title="6、配置网站"></a>6、配置网站</h5><p>完成以上步骤后，我们在浏览器中输入<code>https://网站域名/admin</code>，输入用户名和密码，即可进入面板</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030211443517.png" alt="image-20211030211443517"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030211443517.png" alt="image-20211030211443517"></p>
 <p>短链的生成，默认是在域名后面从1开始增加，如果要更改成随机字母数字，我们可以在此处激活插件中的Random ShortURLs</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030211814175.png" alt="image-20211030211814175"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030211814175.png" alt="image-20211030211814175"></p>
 <p>更换<a href="https://github.com/Flynntes/Sleeky">Sleeky</a>主题，下载压缩包文件并上传至根目录，前端只需要将sleeky-frontend中的文件复制到yourls网站根目录即可，后端则需要将 sleeky-backend文件夹放到yourls目录下的 user/plugins 中，重新进去网站后，可以在插件中找到Sleeky，激活主题插件即可</p>
-<p><img src="C:\Users\Asus\AppData\Roaming\Typora\typora-user-images\image-20211030233700579.png" alt="image-20211030233700579"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/30/image-20211030233700579.png" alt="image-20211030233700579"></p>
 <hr>
 <h4 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h4><p><a href="https://guozh.net/yourls-install-short-url/">yourls 结合宝塔搭建私人短链接服务</a></p>
 <p><a href="https://www.zatp.com/post/build-short-url-with-yourls/#cl-4">使用yourls搭建短链接生成工具</a></p>
