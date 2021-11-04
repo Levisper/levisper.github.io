@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>苹果CMS10搭建视频站 |  erenの小屋</title>
+      <title>宝塔面板安装 |  erenの小屋</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -51,7 +51,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-苹果CMS10视频站的搭"
+  id="post-宝塔面板安装"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -62,7 +62,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  苹果CMS10搭建视频站
+  宝塔面板安装
 </h1>
  
 
@@ -70,15 +70,19 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/" class="article-date">
-  <time datetime="2021-09-22T12:01:11.000Z" itemprop="datePublished">2021-09-22</time>
-</a>   
+      <a href="/2021/11/01/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2021-11-01T12:38:00.000Z" itemprop="datePublished">2021-11-01</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">701</span>
+            <span class="post-count">854</span>
         </span>
     </span>
 
@@ -87,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">3 分钟</span>
         </span>
     </span>
 </div>
@@ -102,70 +106,67 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>苹果CMS程序是一套采用PHP+MYSQL环境下运行的完善而强大的快速建站系统。因此，通过它，我们可以方便快捷地搭建个人视频站点。</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006173930313.png" alt="image-20211006173930313"></p>
+  <p>宝塔面板是一款服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。</p>
+<p>通过宝塔，我们可以在VPS上方便地部署网页服务，同时能够对服务器状态进行长期监控。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103224946256.png" alt="image-20211103224946256"></p>
 <span id="more"></span>
 
 <hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、VPS一台"><a href="#1、VPS一台" class="headerlink" title="1、VPS一台"></a>1、VPS一台</h5><blockquote>
-<p>推荐购买国外商家，选择配置较高点的</p>
-</blockquote>
-<h5 id="2、宝塔环境安装"><a href="#2、宝塔环境安装" class="headerlink" title="2、宝塔环境安装"></a>2、宝塔环境安装</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.bt.cn/">宝塔官网</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.bt.cn/bbs/thread-19376-1-1.html">安装教程</a></p>
-</blockquote>
-<p> 环境配置：Nginx + PHP (5.6 +) + MySQL(5.5 +) </p>
-<h5 id="3、域名解析"><a href="#3、域名解析" class="headerlink" title="3、域名解析"></a>3、域名解析</h5><blockquote>
-<p>如果没有域名，先去购买一个，国内外域名服务商均可</p>
-<p>解析你购买的域名到用于部署图床的VPS,A类型解析 (推荐CloudFlare平台)</p>
-</blockquote>
-<h5 id="4、CMS程序下载"><a href="#4、CMS程序下载" class="headerlink" title="4、CMS程序下载"></a>4、CMS程序下载</h5><blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/magicblack/maccms10/releases">GitHub</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.maccms.cn/down.html">CMS官网</a></p>
-</blockquote>
-<p>下载程序压缩包至本地</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006204407213.png" alt="image-20211006204407213"></p>
-<hr>
-<h4 id="二：网站部署"><a href="#二：网站部署" class="headerlink" title="二：网站部署"></a>二：网站部署</h4><h5 id="1、宝塔中添加站点"><a href="#1、宝塔中添加站点" class="headerlink" title="1、宝塔中添加站点"></a>1、宝塔中添加站点</h5><p>登陆宝塔之后，点击网站—添加站点</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006204803770.png" alt="image-20211006204803770"></p>
-<p>填如相应的域名，选择数据库并更改账号和密码，勾选php版本</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205046088.png" alt="image-20211006205046088"></p>
-<h5 id="2、上传CMS程序至网站根目录"><a href="#2、上传CMS程序至网站根目录" class="headerlink" title="2、上传CMS程序至网站根目录"></a>2、上传CMS程序至网站根目录</h5><p>点击网站根目录，删除目录下的 index.html 和 404.html 文件</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205329125.png" alt="image-20211006205329125"></p>
-<p>上传前面下载好的CMS压缩包</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205518427.png" alt="image-20211006205518427"></p>
-<p>解压文件，并将文件夹里的内容全选之后剪切，粘贴到根目录下，如图所示</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006205635638.png" alt="image-20211006205635638"></p>
-<p>给网站申请免费ssl证书，并开启强制HTTPS</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210116126.png" alt="image-20211006210116126"></p>
-<h5 id="3、配置网站"><a href="#3、配置网站" class="headerlink" title="3、配置网站"></a>3、配置网站</h5><p>在浏览器中输入你的网址，会自动跳转到 https://你的域名/install.php，并自动运行 install.php 脚本进行安装初始化</p>
-<p>初始化后，fileinfo 处于红色状态，此时需要在宝塔中安装此扩展</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210404409.png" alt="image-20211006210404409"></p>
-<p>点击软件商店—已安装—PHP设置</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210715502.png" alt="image-20211006210715502"></p>
-<p>安装fileinfo扩展</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006210903747.png" alt="image-20211006210903747"></p>
-<p>安装完成后，重载配置，回到网站界面并刷新，可以发现红色标记已经消失</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006211057295.png" alt="image-20211006211057295"></p>
-<p>填入数据库名称、账号及密码（可在宝塔面板的数据库一栏查看），默认覆盖数据库，并测试数据库连接是否正确，自行设置管理员账号和密码（请保存好，以便后续登陆），勾选创建初始化数据，完成以上设置后（未说明的不需要更改），点击立即执行安装</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006211231542.png" alt="image-20211006211231542"></p>
-<h5 id="4、宝塔中重命名网站根目录的admin-php文件"><a href="#4、宝塔中重命名网站根目录的admin-php文件" class="headerlink" title="4、宝塔中重命名网站根目录的admin.php文件"></a>4、宝塔中重命名网站根目录的admin.php文件</h5><p>可以修改成任意名字，注意**.php**后缀不变</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006212217885.png" alt="image-20211006212217885"></p>
-<h5 id="5、登陆后台"><a href="#5、登陆后台" class="headerlink" title="5、登陆后台"></a>5、登陆后台</h5><p>完成第四步后，刷新就可以登陆进后台，如提示更新程序，更新即可</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-202110062126006259f7fa7a692ccc915.png" alt="image-20211006212600625"></p>
-<h5 id="6、采集资源"><a href="#6、采集资源" class="headerlink" title="6、采集资源"></a>6、采集资源</h5><p>点击采集—自定义接口—添加</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006212906033.png" alt="image-20211006212906033"></p>
-<p>自行谷歌影视资源采集站，并按提示进行填写</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-2021100621310271618c5b3c5efe49083.png" alt="image-20211006213102716"></p>
+<h4 id="一-配置要求"><a href="#一-配置要求" class="headerlink" title="一:配置要求"></a>一:配置要求</h4><ul>
+<li><p>内存：512M以上，推荐768M以上</p>
+</li>
+<li><p>硬盘：300M以上可用硬盘空间</p>
+</li>
+<li><p>系统：CentOS 7.1+ (Ubuntu16.04+.、Debian9.0+)，<strong>确保是干净的操作系统，</strong>没有安装过其它环境带的Apache/Nginx/php/MySQL/pgsql/gitlab/java<strong>（已有上述环境不可安装）</strong></p>
+</li>
+<li><p>架构：x86_64（主流服务器均是此架构），ARM不完整兼容（面板环境安装慢，部分软件可能安装不上）</p>
+</li>
+</ul>
 <blockquote>
-<p>详尽配置可以参考<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13A411Y7RX">CMS对接视频库</a></p>
+<p> 系统兼容性顺序：Centos7.x &gt; Debian10 &gt; Ubuntu 20.04 &gt; Cenots8.x &gt; Ubuntu 18.04 &gt; 其它系统</p>
 </blockquote>
-<h5 id="7、模板的使用"><a href="#7、模板的使用" class="headerlink" title="7、模板的使用"></a>7、模板的使用</h5><p>可以自行套用模板：<a target="_blank" rel="noopener" href="http://www.maccms.cc/category/muban">模板参考</a></p>
-<blockquote>
-<p>替换教程模板里会有对用的教程提示</p>
-</blockquote>
-<hr>
-<h4 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h4><h5 id="1、搭建苹果-CMS-视频站"><a href="#1、搭建苹果-CMS-视频站" class="headerlink" title="1、搭建苹果 CMS 视频站"></a>1、<a target="_blank" rel="noopener" href="https://ednovas.xyz/2021/06/11/applecms/">搭建苹果 CMS 视频站</a></h5><h5 id="2、CMS入门指南"><a href="#2、CMS入门指南" class="headerlink" title="2、CMS入门指南"></a>2、<a target="_blank" rel="noopener" href="https://www.maccms.cn/doc/v10/index.html">CMS入门指南</a></h5> 
+<h4 id="二：官方安装脚本"><a href="#二：官方安装脚本" class="headerlink" title="二：官方安装脚本"></a>二：官方安装脚本</h4><p>连接SSH，进入服务器，不同系统都是一条指令安装完成</p>
+<p>Centos：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Debian：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Ubuntu/Deepin：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Fedora：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>安装过程中遇到选择时，均选择Y，等待一段时间后，会跳出宝塔的登陆地址、用户名和密码。</p>
+<h4 id="三、配置宝塔参数"><a href="#三、配置宝塔参数" class="headerlink" title="三、配置宝塔参数"></a>三、配置宝塔参数</h4><p>目前宝塔需要手机号登陆，我们可以通过下面这条命令，跳过手机号登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /www/server/panel/data/bind.pl binds.pl   #去除登陆验证</span><br></pre></td></tr></table></figure>
+
+<p>在浏览器中输入面板地址，并按照提供的用户名和密码登陆面板，阅读完协议后，勾选同意，就会进入以下界面</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103233313397.png" alt="image-20211103233313397"></p>
+<p>一般情况下不需要选择编译安装，非常耗时间，极速安装能满足多数服务运行要求，安装需要等待一段时间（因服务器性能差异，有快有慢）。此外，为了安全考虑，进入面板的设置中，更改面板端口，并修改默认的用户名和密码</p>
+<p>面板的登录是24小时有效，如果过了24小时后，重新进入网站，会看到以下提示，这是宝塔的安全保护措施。我们要查看面板，可以在SSH中输入命令：<code>/etc/init.d/bt default</code>，会显示地址出来。当然我们也可以选择一劳永逸，直接关闭安全入口，只需要输入：<code>rm -f /www/server/panel/data/admin_path.pl</code>（出于安全考虑，不推荐关闭）</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103234334427.png" alt="image-20211103234334427"></p>
+<h4 id="四：宝塔纯净版-7-6-0版本"><a href="#四：宝塔纯净版-7-6-0版本" class="headerlink" title="四：宝塔纯净版 7.6.0版本"></a>四：宝塔纯净版 7.6.0版本</h4><p>看个人需求，一般使用官方的就足够了</p>
+<p>特点：<strong>跳过手机号验证，并免费使用软件商店中的所有[企业版插件]、[专业版插件]、[运行环境]、[免费插件]、[宝塔插件]</strong></p>
+<p>Centos：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Debian：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Ubuntu：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>已经安装官方面板，执行下列命令升级到7.6.0纯净版：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://v7.hostcli.com/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
+
+<p>任意非官方版本还原到官方最新版：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http://download.bt.cn/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
+
+
+
+ 
       <!-- reward -->
       
     </div>
@@ -213,7 +214,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/09/22/%E8%8B%B9%E6%9E%9CCMS10%E8%A7%86%E9%A2%91%E7%AB%99%E7%9A%84%E6%90%AD/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2021/11/01/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -226,19 +227,19 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" class="article-nav-link">
+      <a href="/2021/11/04/Google%20Voice%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            VMware虚拟机安装Debian系统
+            Google Voice自动回复
           
         </div>
       </a>
     
     
-      <a href="/2021/09/19/Chevereto%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/" class="article-nav-link">
+      <a href="/2021/10/30/Yourls%E7%9F%AD%E9%93%BE%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Chevereto图床||进阶</div>
+        <div class="article-nav-title">YOURLS短链服务搭建</div>
       </a>
     
   </nav>

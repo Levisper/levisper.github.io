@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-30T15:47:31.643Z</updated>
+  <updated>2021-11-04T13:52:27.101Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google Voice自动回复</title>
+    <link href="http://example.com/2021/11/04/Google%20Voice%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D/"/>
+    <id>http://example.com/2021/11/04/Google%20Voice%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D/</id>
+    <published>2021-11-04T12:51:54.000Z</published>
+    <updated>2021-11-04T13:52:27.101Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;根据最新 Google Voice 最新的使用政策，不活跃帐户的上限由此前的6个月下调为3个月。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果您在 3 个月内没有拨打或者发送短信，Google 可能会收回您的 Google 语音号码（如果您有的话）。  我们不会收回已移植到 Google 语音或永久保留的号码。 ——摘自Google Voice 官网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我们可以通过脚本，来实现关键词自动回复，方便了多个号码进行相互保号。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/04/image-20211104210236145.png&quot; alt=&quot;image-20211104210236145&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔面板安装</title>
+    <link href="http://example.com/2021/11/01/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85/"/>
+    <id>http://example.com/2021/11/01/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85/</id>
+    <published>2021-11-01T12:38:00.000Z</published>
+    <updated>2021-11-03T16:01:38.223Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;宝塔面板是一款服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。&lt;/p&gt;
+&lt;p&gt;通过宝塔，我们可以在VPS上方便地部署网页服务，同时能够对服务器状态进行长期监控。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/03/image-20211103224946256.png&quot; alt=&quot;image-20211103224946256&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>YOURLS短链服务搭建</title>
@@ -168,10 +213,10 @@
   
   <entry>
     <title>VMware虚拟机安装Debian系统</title>
-    <link href="http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/"/>
-    <id>http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/</id>
+    <link href="http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://example.com/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/</id>
     <published>2021-10-06T14:00:05.000Z</published>
-    <updated>2021-10-07T01:33:51.491Z</updated>
+    <updated>2021-10-12T05:20:05.101Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.debian.org/&quot;&gt;Debian 计划&lt;/a&gt;是一个致力于创建一个&lt;a href=&quot;https://www.debian.org/intro/free&quot;&gt;自由&lt;/a&gt;操作系统的合作组织，他们所创建的这个操作系统名为 &lt;strong&gt;Debian&lt;/strong&gt;。&lt;/p&gt;

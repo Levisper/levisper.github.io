@@ -484,116 +484,6 @@
       </tags>
   </entry>
   <entry>
-    <title>VMware虚拟机安装Debian系统</title>
-    <url>/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89/</url>
-    <content><![CDATA[<p><a href="https://www.debian.org/">Debian 计划</a>是一个致力于创建一个<a href="https://www.debian.org/intro/free">自由</a>操作系统的合作组织，他们所创建的这个操作系统名为 <strong>Debian</strong>。</p>
-<p>操作系统是使计算机运行的基本程序和工具的集合，其中最主要的部分称为内核（kernel）。内核是计算机中最重要的程序，负责一切基本的调度工作，并让您运行其他程序。Debian 系统目前采用 <a href="https://www.kernel.org/">Linux</a> 内核或者 <a href="https://www.freebsd.org/">FreeBSD</a> 内核。</p>
-<p>VMware虚拟机的存在能让我们在Windows系统中轻松体验Debian操作系统。</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006221141305.png" alt="image-20211006221141305"></p>
-<p>本文讲述如何通过VMware虚拟机安装Debian系统。</p>
-<span id="more"></span>
-
-<hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><ol>
-<li><p>Debian下载</p>
-<p><a href="https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-dvd/">下载地址</a></p>
-<p>选择DVD-1进行下载</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/9422b13f-83f7-41bc-a367-2d2d497d9352-10805124.png" alt="image"></p>
-</li>
-<li><p>VMware player下载</p>
-<p><a href="https://www.vmware.com/hk/products/workstation-player/workstation-player-evaluation.html">下载地址</a></p>
-<p>选择 for Windows</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/57960bb8-0b29-43dd-b09f-224d7a4fde6b-10805124.png" alt="image"></p>
-<p>默认勾选即可，可更换安装位置</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/35063498-c383-489f-9adf-7e3d6a6f848a-10805124.png" alt="image"></p>
-<p>若安装过程弹出下列警告窗口，点击确定即可</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/b779b4f2-02f0-463c-9517-f2cdfae8eb6f-10805124.png" alt="image"></p>
-<blockquote>
-<p><strong>非商业用途，不用管许可证问题</strong></p>
-</blockquote>
-</li>
-</ol>
-<hr>
-<h4 id="二：安装Debian"><a href="#二：安装Debian" class="headerlink" title="二：安装Debian"></a>二：安装Debian</h4><ol>
-<li><p>打开VMware player软件</p>
-</li>
-<li><p>点击：创建一个新的虚拟机；并浏览DVD-1文件所在的文件夹</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/fa3b59ea-b186-4198-805a-6636b917ef2c-10805124a61effe8844e66d8.png" alt="image"></p>
-</li>
-<li><p>虚拟机名字可以更改；找到debian文件所在位置</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/4c4a85ed-4241-401a-bf0e-b8c619cb2efe-10805124.png" alt="image"></p>
-</li>
-<li><p>更改磁盘大小（可用建议的磁盘大小）</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/348ed2c8-a61d-45da-b1f5-f8cc7fee8648-10805124.png" alt="image"></p>
-</li>
-<li><p>点击自定义硬件</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/b4911f24-ee3c-4126-a5d7-4c1983e5f390-10805124.png" alt="image"></p>
-</li>
-<li><p>根据电脑配置选择虚拟机的核心配置</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/096aa0e5-2279-47e7-b1ba-27989dceeaca-10805124.png" alt="image"></p>
-<blockquote>
-<p>注意：网络适配器选择NAT,  Display 不加速</p>
-</blockquote>
-</li>
-<li><p>关闭上述配置后点击完成，进入虚拟机界面</p>
-</li>
-<li><p>看到下图界面，按Enter键,进入选择语言和国家，以及键盘映射的界面</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/58c295e0-29fc-4626-b202-8dde2efd2b36-108051242d00c54e22a7e184.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/e4d9e9d1-a116-4e96-a0e2-cc66e387dab9-10805124.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/7f1ed805-f23b-42b5-844c-d492f04b9365-10805124.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/f3e8ecbf-e7c1-4d27-8c73-c17c422dae83-10805124.png" alt="image"></p>
-<blockquote>
-<p>语言国家根据自己熟悉的选择，键盘选择‘美式英语’</p>
-</blockquote>
-</li>
-<li><p>主机名字可以随意</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/780e2b37-ef44-4dc1-8da0-5a297b8c2dab-10805124202a614788c7ff06.png" alt="image"></p>
-<blockquote>
-<p>特别注意： 域名，root passwd 都不需要填写，用户名和密码设置一个容易记住的</p>
-</blockquote>
-</li>
-<li><p>选择磁盘分区</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/39914937-7916-4a96-b539-b2f9f6ff3ac2-10805124.png" alt="image"></p>
-</li>
-<li><p>选择第二个：向导-使用整个磁盘并配置LVM</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/3101ee13-e23b-4f80-9105-6cb1e6ad77e9-10805124.png" alt="image"></p>
-</li>
-<li><p>选择第一个：将所有文件放在同一个分区（推荐新手使用）</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/c999fe58-3393-4cd6-ad9f-16d3facf4e99-10805124.png" alt="image"></p>
-</li>
-<li><p>选择 Yes </p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/120b1869-2a47-4315-bdd4-86cf5b618f66-10805124.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/8a07bae3-8ba4-4965-b8cd-5d7907734303-10805124.png" alt="image"></p>
-</li>
-<li><p>选择“否” </p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/d5714a4d-6e5f-4991-b79e-db45d2fc6d52-10805124.png" alt="image"></p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/e33860c8-1a27-4191-a0e2-c7b1ed15e15a-10805124.png" alt="image"></p>
-</li>
-<li><p>勾选以上选项：1、3和最后4个</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/15846681-0682-4c46-a9f6-1ac4159c429e-10805124.png" alt="image"></p>
-</li>
-<li><p>选择“否”</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/4bf8e856-1ca0-444e-ae94-afa1d9482976-10805124.png" alt="image"></p>
-</li>
-<li><p>安装完成后选择“是”</p>
-<p><img src="https://pic.020810.xyz/images/2021/10/06/1ef8494e-c4e2-4d61-84e7-d1acc1c749a2-10805124adfe8aa66a13f407.png" alt="image"></p>
-</li>
-<li><p>注意事项</p>
-<p>安装完成后提醒重新引导安装，则需要删除本地电脑中的源DVD文件。</p>
-</li>
-<li><p>启动虚拟机，开始享用！</p>
-</li>
-</ol>
-<hr>
-<h4 id="本教程源起于开源社区"><a href="#本教程源起于开源社区" class="headerlink" title="本教程源起于开源社区"></a>本教程源起于<a href="https://t.me/opensource_community">开源社区</a></h4>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>KeePass密码管理部署配置||基础</title>
     <url>/2021/10/11/keepass%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5/</url>
     <content><![CDATA[<p>​      密码，和我们的日常生活息息相关。</p>
@@ -1060,6 +950,240 @@
 <p><strong>此处的端口根据不同代理填写</strong></p>
 </blockquote>
 ]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VMware虚拟机安装Debian系统</title>
+    <url>/2021/10/06/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p><a href="https://www.debian.org/">Debian 计划</a>是一个致力于创建一个<a href="https://www.debian.org/intro/free">自由</a>操作系统的合作组织，他们所创建的这个操作系统名为 <strong>Debian</strong>。</p>
+<p>操作系统是使计算机运行的基本程序和工具的集合，其中最主要的部分称为内核（kernel）。内核是计算机中最重要的程序，负责一切基本的调度工作，并让您运行其他程序。Debian 系统目前采用 <a href="https://www.kernel.org/">Linux</a> 内核或者 <a href="https://www.freebsd.org/">FreeBSD</a> 内核。</p>
+<p>VMware虚拟机的存在能让我们在Windows系统中轻松体验Debian操作系统。</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/image-20211006221141305.png" alt="image-20211006221141305"></p>
+<p>本文讲述如何通过VMware虚拟机安装Debian系统。</p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><ol>
+<li><p>Debian下载</p>
+<p><a href="https://mirrors.ustc.edu.cn/debian-cd/10.7.0/amd64/iso-dvd/">下载地址</a></p>
+<p>选择DVD-1进行下载</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/9422b13f-83f7-41bc-a367-2d2d497d9352-10805124.png" alt="image"></p>
+</li>
+<li><p>VMware player下载</p>
+<p><a href="https://www.vmware.com/hk/products/workstation-player/workstation-player-evaluation.html">下载地址</a></p>
+<p>选择 for Windows</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/57960bb8-0b29-43dd-b09f-224d7a4fde6b-10805124.png" alt="image"></p>
+<p>默认勾选即可，可更换安装位置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/35063498-c383-489f-9adf-7e3d6a6f848a-10805124.png" alt="image"></p>
+<p>若安装过程弹出下列警告窗口，点击确定即可</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/b779b4f2-02f0-463c-9517-f2cdfae8eb6f-10805124.png" alt="image"></p>
+<blockquote>
+<p><strong>非商业用途，不用管许可证问题</strong></p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h4 id="二：安装Debian"><a href="#二：安装Debian" class="headerlink" title="二：安装Debian"></a>二：安装Debian</h4><ol>
+<li><p>打开VMware player软件</p>
+</li>
+<li><p>点击：创建一个新的虚拟机；并浏览DVD-1文件所在的文件夹</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/fa3b59ea-b186-4198-805a-6636b917ef2c-10805124a61effe8844e66d8.png" alt="image"></p>
+</li>
+<li><p>虚拟机名字可以更改；找到debian文件所在位置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/4c4a85ed-4241-401a-bf0e-b8c619cb2efe-10805124.png" alt="image"></p>
+</li>
+<li><p>更改磁盘大小（可用建议的磁盘大小）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/348ed2c8-a61d-45da-b1f5-f8cc7fee8648-10805124.png" alt="image"></p>
+</li>
+<li><p>点击自定义硬件</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/b4911f24-ee3c-4126-a5d7-4c1983e5f390-10805124.png" alt="image"></p>
+</li>
+<li><p>根据电脑配置选择虚拟机的核心配置</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/096aa0e5-2279-47e7-b1ba-27989dceeaca-10805124.png" alt="image"></p>
+<blockquote>
+<p>注意：网络适配器选择NAT,  Display 不加速</p>
+</blockquote>
+</li>
+<li><p>关闭上述配置后点击完成，进入虚拟机界面</p>
+</li>
+<li><p>看到下图界面，按Enter键,进入选择语言和国家，以及键盘映射的界面</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/58c295e0-29fc-4626-b202-8dde2efd2b36-108051242d00c54e22a7e184.png" alt="image"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/e4d9e9d1-a116-4e96-a0e2-cc66e387dab9-10805124.png" alt="image"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/7f1ed805-f23b-42b5-844c-d492f04b9365-10805124.png" alt="image"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/f3e8ecbf-e7c1-4d27-8c73-c17c422dae83-10805124.png" alt="image"></p>
+<blockquote>
+<p>语言国家根据自己熟悉的选择，键盘选择‘美式英语’</p>
+</blockquote>
+</li>
+<li><p>主机名字可以随意</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/780e2b37-ef44-4dc1-8da0-5a297b8c2dab-10805124202a614788c7ff06.png" alt="image"></p>
+<blockquote>
+<p>特别注意： 域名，root passwd 都不需要填写，用户名和密码设置一个容易记住的</p>
+</blockquote>
+</li>
+<li><p>选择磁盘分区</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/39914937-7916-4a96-b539-b2f9f6ff3ac2-10805124.png" alt="image"></p>
+</li>
+<li><p>选择第二个：向导-使用整个磁盘并配置LVM</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/3101ee13-e23b-4f80-9105-6cb1e6ad77e9-10805124.png" alt="image"></p>
+</li>
+<li><p>选择第一个：将所有文件放在同一个分区（推荐新手使用）</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/c999fe58-3393-4cd6-ad9f-16d3facf4e99-10805124.png" alt="image"></p>
+</li>
+<li><p>选择 Yes </p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/120b1869-2a47-4315-bdd4-86cf5b618f66-10805124.png" alt="image"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/8a07bae3-8ba4-4965-b8cd-5d7907734303-10805124.png" alt="image"></p>
+</li>
+<li><p>选择“否” </p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/d5714a4d-6e5f-4991-b79e-db45d2fc6d52-10805124.png" alt="image"></p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/e33860c8-1a27-4191-a0e2-c7b1ed15e15a-10805124.png" alt="image"></p>
+</li>
+<li><p>勾选以上选项：1、3和最后4个</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/15846681-0682-4c46-a9f6-1ac4159c429e-10805124.png" alt="image"></p>
+</li>
+<li><p>选择“否”</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/4bf8e856-1ca0-444e-ae94-afa1d9482976-10805124.png" alt="image"></p>
+</li>
+<li><p>安装完成后选择“是”</p>
+<p><img src="https://pic.020810.xyz/images/2021/10/06/1ef8494e-c4e2-4d61-84e7-d1acc1c749a2-10805124adfe8aa66a13f407.png" alt="image"></p>
+</li>
+<li><p>注意事项</p>
+<p>安装完成后提醒重新引导安装，则需要删除本地电脑中的源DVD文件。</p>
+</li>
+<li><p>启动虚拟机，开始享用！</p>
+</li>
+</ol>
+<hr>
+<h4 id="本教程源起于开源社区"><a href="#本教程源起于开源社区" class="headerlink" title="本教程源起于开源社区"></a>本教程源起于<a href="https://t.me/opensource_community">开源社区</a></h4>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Google Voice自动回复</title>
+    <url>/2021/11/04/Google%20Voice%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D/</url>
+    <content><![CDATA[<p>根据最新 Google Voice 最新的使用政策，不活跃帐户的上限由此前的6个月下调为3个月。</p>
+<blockquote>
+<p>如果您在 3 个月内没有拨打或者发送短信，Google 可能会收回您的 Google 语音号码（如果您有的话）。  我们不会收回已移植到 Google 语音或永久保留的号码。 ——摘自Google Voice 官网</p>
+</blockquote>
+<p>我们可以通过脚本，来实现关键词自动回复，方便了多个号码进行相互保号。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104210236145.png" alt="image-20211104210236145"></p>
+<span id="more"></span>
+
+<h5 id="一：开启转发并设置过滤器"><a href="#一：开启转发并设置过滤器" class="headerlink" title="一：开启转发并设置过滤器"></a>一：开启转发并设置过滤器</h5><p>登录GV网页版，点击进入设置，开启将短信转发到电子邮件地址</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104200735810.png" alt="image-20211104200735810"></p>
+<p>登录谷歌邮箱，进入你的绑定了GV号码的邮箱，点击搜索框的菜单</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104200209649.png" alt="image-20211104200209649"></p>
+<p>设置关键词（例如我设置了关键词666，如果有别人发来的消息中包含了666，就会触发回复），点击创建过滤器，过滤器的标签名我这里设置的是</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104200303271604bd7e635723958.png" alt="image-20211104200303271"></p>
+<p>勾选跳过收件箱，并创建一下应用标签，我这里设置的标签名字是autoreply，点击创建过滤器即可创建成功</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104212701886.png" alt="image-20211104212701886"></p>
+<h5 id="二：项目填入脚本"><a href="#二：项目填入脚本" class="headerlink" title="二：项目填入脚本"></a>二：项目填入脚本</h5><p>进入谷歌云端硬盘，点击新建</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104200550671.png" alt="image-20211104200550671"></p>
+<p>点击更多，找到Google Apps Script，点击进入</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104200649249.png" alt="image-20211104200649249"></p>
+<p>删除项目中的默认代码，将下列代码<strong>修改后</strong>复制进去，并保存项目，重命名任意名字即可（此处我设置的是GV）</p>
+<blockquote>
+<p><strong><code>var labelObj = GmailApp.getUserLabelByName(&#39;autoreply&#39;);</code>这行中的autoreply标签名字改成前面你自己设定的应用标签名，如果和我设定的一样就不用修改</strong></p>
+<p><strong><code>MailApp.sendEmail(sender, &quot;Auto Reply&quot;, &quot;保号请发送666给我哦，耐心等待一分钟会收到回复。目前GV回收政策已经下调至3个月，请在此期间发送短信或者打电话来保持活跃&quot;);</code>这里的回复内容可以自行修改。</strong></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function autoReplier() &#123;</span><br><span class="line">    var labelObj = GmailApp.getUserLabelByName(&#x27;autoreply&#x27;);</span><br><span class="line">    var gmailThreads;</span><br><span class="line">    var messages;</span><br><span class="line">    var sender;</span><br><span class="line">    for (var gg = 0; gg &lt; labelObj.getUnreadCount(); gg++) &#123;</span><br><span class="line">        gmailThreads = labelObj.getThreads()[gg];</span><br><span class="line">        messages = gmailThreads.getMessages();</span><br><span class="line">        for (var ii = 0; ii &lt; messages.length; ii++) &#123;</span><br><span class="line">            if (messages[ii].isUnread()) &#123;</span><br><span class="line">                msg = messages[ii].getPlainBody();</span><br><span class="line">                sender = messages[ii].getFrom();</span><br><span class="line">                MailApp.sendEmail(sender, &quot;Auto Reply&quot;, &quot;保号请发送666给我哦，耐心等待一分钟会收到回复。目前GV回收政策已经下调至3个月，请在此期间发送短信或者打电话来保持活跃&quot;);</span><br><span class="line">                messages[ii].markRead();</span><br><span class="line">                messages[ii].moveToTrash();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202141260.png" alt="image-20211104202141260"></p>
+<h5 id="3：开启触发器"><a href="#3：开启触发器" class="headerlink" title="3：开启触发器"></a>3：开启触发器</h5><p>点击右侧的时钟图标，进入触发器设置</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202348876bcc246b6fa2dd90f.png" alt="image-20211104202348876"></p>
+<p>添加一个触发器</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202403538.png" alt="image-20211104202403538"></p>
+<p>选择分钟定时器/每分钟，并保存</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202527869.png" alt="image-20211104202527869"></p>
+<p>此时会跳出弹窗，如果被浏览器阻止了，请允许弹出，点击选择登录的账号</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-2021110420273787870db5d81cdf55595.png" alt="image-20211104202737878"></p>
+<p>弹出验证窗口，请点击高级</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202802195.png" alt="image-20211104202802195"></p>
+<p>点击转至GV</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202829334.png" alt="image-20211104202829334"></p>
+<p>授权允许上述权限即可，至此，我们就完成了所有的设置，可以用其他号码发送666进行回复测试</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/04/image-20211104202944448.png" alt="image-20211104202944448"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宝塔面板安装</title>
+    <url>/2021/11/01/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>宝塔面板是一款服务器管理软件，支持一键LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA等100多项服务器管理功能。</p>
+<p>通过宝塔，我们可以在VPS上方便地部署网页服务，同时能够对服务器状态进行长期监控。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103224946256.png" alt="image-20211103224946256"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一-配置要求"><a href="#一-配置要求" class="headerlink" title="一:配置要求"></a>一:配置要求</h4><ul>
+<li><p>内存：512M以上，推荐768M以上</p>
+</li>
+<li><p>硬盘：300M以上可用硬盘空间</p>
+</li>
+<li><p>系统：CentOS 7.1+ (Ubuntu16.04+.、Debian9.0+)，<strong>确保是干净的操作系统，</strong>没有安装过其它环境带的Apache/Nginx/php/MySQL/pgsql/gitlab/java<strong>（已有上述环境不可安装）</strong></p>
+</li>
+<li><p>架构：x86_64（主流服务器均是此架构），ARM不完整兼容（面板环境安装慢，部分软件可能安装不上）</p>
+</li>
+</ul>
+<blockquote>
+<p> 系统兼容性顺序：Centos7.x &gt; Debian10 &gt; Ubuntu 20.04 &gt; Cenots8.x &gt; Ubuntu 18.04 &gt; 其它系统</p>
+</blockquote>
+<h4 id="二：官方安装脚本"><a href="#二：官方安装脚本" class="headerlink" title="二：官方安装脚本"></a>二：官方安装脚本</h4><p>连接SSH，进入服务器，不同系统都是一条指令安装完成</p>
+<p>Centos：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Debian：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Ubuntu/Deepin：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Fedora：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>安装过程中遇到选择时，均选择Y，等待一段时间后，会跳出宝塔的登陆地址、用户名和密码。</p>
+<h4 id="三、配置宝塔参数"><a href="#三、配置宝塔参数" class="headerlink" title="三、配置宝塔参数"></a>三、配置宝塔参数</h4><p>目前宝塔需要手机号登陆，我们可以通过下面这条命令，跳过手机号登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mv /www/server/panel/data/bind.pl binds.pl   #去除登陆验证</span><br></pre></td></tr></table></figure>
+
+<p>在浏览器中输入面板地址，并按照提供的用户名和密码登陆面板，阅读完协议后，勾选同意，就会进入以下界面</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103233313397.png" alt="image-20211103233313397"></p>
+<p>一般情况下不需要选择编译安装，非常耗时间，极速安装能满足多数服务运行要求，安装需要等待一段时间（因服务器性能差异，有快有慢）。此外，为了安全考虑，进入面板的设置中，更改面板端口，并修改默认的用户名和密码</p>
+<p>面板的登录是24小时有效，如果过了24小时后，重新进入网站，会看到以下提示，这是宝塔的安全保护措施。我们要查看面板，可以在SSH中输入命令：<code>/etc/init.d/bt default</code>，会显示地址出来。当然我们也可以选择一劳永逸，直接关闭安全入口，只需要输入：<code>rm -f /www/server/panel/data/admin_path.pl</code>（出于安全考虑，不推荐关闭）</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/03/image-20211103234334427.png" alt="image-20211103234334427"></p>
+<h4 id="四：宝塔纯净版-7-6-0版本"><a href="#四：宝塔纯净版-7-6-0版本" class="headerlink" title="四：宝塔纯净版 7.6.0版本"></a>四：宝塔纯净版 7.6.0版本</h4><p>看个人需求，一般使用官方的就足够了</p>
+<p>特点：<strong>跳过手机号验证，并免费使用软件商店中的所有[企业版插件]、[专业版插件]、[运行环境]、[免费插件]、[宝塔插件]</strong></p>
+<p>Centos：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Debian：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>Ubuntu：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure>
+
+<p>已经安装官方面板，执行下列命令升级到7.6.0纯净版：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl http://v7.hostcli.com/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
+
+<p>任意非官方版本还原到官方最新版：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl http://download.bt.cn/install/update6.sh|bash</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
         <tag>学习</tag>
       </tags>
