@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-09T14:18:14.086Z</updated>
+  <updated>2021-11-09T14:43:09.360Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试2</title>
+    <link href="http://example.com/2021/11/09/2/"/>
+    <id>http://example.com/2021/11/09/2/</id>
+    <published>2021-11-09T14:41:55.000Z</published>
+    <updated>2021-11-09T14:43:09.360Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议。&lt;/p&gt;
+&lt;p&gt;在博客、杂志等等的地方有广泛的应用，而Flowerssr bot就是一个支持应用内即时预览的 Telegram RSS</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>测试RSS</title>
@@ -429,29 +451,6 @@
 &lt;/blockquote&gt;
 &lt;h5 id=&quot;3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot;&gt;&lt;a href=&quot;#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot; class=&quot;headerlink&quot; title=&quot;3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&quot;&gt;&lt;/a&gt;3、下载&lt;a href=&quot;https://cmder.net/&quot;&gt;Cmder&lt;/a&gt;，并进行安装，后文所涉及到命令均是在Cmder里面进行运行&lt;/h5&gt;&lt;blockquote&gt;
 &lt;p&gt;下载选择Full版本&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何提交博客到hexo</title>
-    <link href="http://example.com/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/"/>
-    <id>http://example.com/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/</id>
-    <published>2021-06-25T04:19:20.000Z</published>
-    <updated>2021-06-26T13:01:52.614Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Hello！大家好，这是我的第一条&lt;a href=&quot;https://levisper.github.io/&quot;&gt;博客&lt;/a&gt;，后续会定期更新各类教程等优质文章在博客里。欢迎大家关注我的博客，也欢迎加入&lt;a href=&quot;https://t.me/opensource_community&quot;&gt;开源社区&lt;/a&gt;和&lt;a href=&quot;https://t.me/opencfdchannel&quot;&gt;开源频道&lt;/a&gt;，更多有趣的小伙伴在等着你哦！&lt;/p&gt;
-&lt;p&gt;基于是初次搭建博客，本文将讲述如何提交博客到&lt;em&gt;&lt;strong&gt;hexo&lt;/strong&gt;&lt;/em&gt;以及删除已经发布的文章。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注：本文使用的是cmder软件进行命令操作&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
