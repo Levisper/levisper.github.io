@@ -3,7 +3,11 @@
   <entry>
     <title>Hexo+GitHub博客搭建教程</title>
     <url>/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。搭建大致分为三个流程：准备工作、安装Hexo、部署在GitHub，下面开始介绍详细流程。</p>
+    <content><![CDATA[<p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。</p>
+<p>搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114222835670.png" alt="image-20211114222835670"></p>
+<span id="more"></span>
+
 <hr>
 <h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、下载Node-js，并进行安装（详见注意事项）"><a href="#1、下载Node-js，并进行安装（详见注意事项）" class="headerlink" title="1、下载Node.js，并进行安装（详见注意事项）"></a>1、下载<a href="https://nodejs.org/en/">Node.js</a>，并进行安装（<strong>详见注意事项</strong>）</h5><blockquote>
 <p>a.选择windows安装包.msi下载</p>
@@ -15,8 +19,6 @@
 <h5 id="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"><a href="#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行" class="headerlink" title="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"></a>3、下载<a href="https://cmder.net/">Cmder</a>，并进行安装，后文所涉及到命令均是在Cmder里面进行运行</h5><blockquote>
 <p>下载选择Full版本</p>
 </blockquote>
-<span id="more"></span>
-
 <hr>
 <h4 id="二：安装Hexo"><a href="#二：安装Hexo" class="headerlink" title="二：安装Hexo"></a>二：安装Hexo</h4><ul>
 <li><p>打开Cmder面板，分别输入以下命令（检测软件配置是否安装成功）</p>
