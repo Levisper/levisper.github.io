@@ -6,7 +6,7 @@
   <link href="https://erenblog.eu.org/atom.xml" rel="self"/>
   
   <link href="https://erenblog.eu.org/"/>
-  <updated>2021-11-04T14:04:38.294Z</updated>
+  <updated>2021-11-14T07:07:52.189Z</updated>
   <id>https://erenblog.eu.org/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eu.org域名托管至Cloudflare</title>
+    <link href="https://erenblog.eu.org/2021/11/14/eu.org%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E8%87%B3Cloudflare/"/>
+    <id>https://erenblog.eu.org/2021/11/14/eu.org%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E8%87%B3Cloudflare/</id>
+    <published>2021-11-14T06:16:16.000Z</published>
+    <updated>2021-11-14T07:07:52.189Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://nic.eu.org/&quot;&gt;eu.org&lt;/a&gt;是欧盟组织下面的域名，至今已有二十多年的历史。&lt;/p&gt;
+&lt;p&gt;目前个人是可以免费申请属于自己的域名，需要实名认证。申请完成后，等待一段时间（慢点可能需要一个月）即可查看到自己的域名。&lt;/p&gt;
+&lt;p&gt;本文重点讲述如何将已经申请好的eu域名托管到Cloudflare（下文将简称为cf）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/14/image-20211114143848872.png&quot; alt=&quot;image-20211114143848872&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://erenblog.eu.org/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="https://erenblog.eu.org/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Google Voice自动回复</title>

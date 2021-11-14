@@ -1188,4 +1188,50 @@
         <tag>学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>eu.org域名托管至Cloudflare</title>
+    <url>/2021/11/14/eu.org%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E8%87%B3Cloudflare/</url>
+    <content><![CDATA[<p><a href="https://nic.eu.org/">eu.org</a>是欧盟组织下面的域名，至今已有二十多年的历史。</p>
+<p>目前个人是可以免费申请属于自己的域名，需要实名认证。申请完成后，等待一段时间（慢点可能需要一个月）即可查看到自己的域名。</p>
+<p>本文重点讲述如何将已经申请好的eu域名托管到Cloudflare（下文将简称为cf）。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114143848872.png" alt="image-20211114143848872"></p>
+<span id="more"></span>
+
+<hr>
+<h5 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h5><p>尽管域名下来时间已经过去了很多天，但当我尝试将eu.org域名直接放到cf托管时，发现添加不上站点，cf认定该域名并不存在，而且发现这个问题并非是个例，原因可能是申请时需要提前添加名称服务器，而名称服务器我选择的是cf默认的两条，所以这里通过另外一种方法来解决出现的该问题。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114144553641.png" alt="image-20211114144553641"></p>
+<h5 id="解决的方法"><a href="#解决的方法" class="headerlink" title="解决的方法"></a>解决的方法</h5><ul>
+<li><p>注册<a href="https://topdn.net/">TopDN</a>账号，并进入到Dashboard</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114141952016.png" alt="image-20211114141952016"></p>
+</li>
+<li><p>点击添加域名</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114142005100.png" alt="image-20211114142005100"></p>
+</li>
+<li><p>填入域名和邮箱，点击create即为添加成功</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114142042461.png" alt="image-20211114142042461"></p>
+</li>
+<li><p>找到页面下的三条名称服务器，并复制</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114142124565.png" alt="image-20211114142124565"></p>
+</li>
+<li><p>打开eu.org的官网界面，进入到自己域名管理界面</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114141840347.png" alt="image-20211114141840347"></p>
+</li>
+<li><p>进入Nameservers</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114141801235.png" alt="image-20211114141801235"></p>
+</li>
+<li><p>勾选第一个server names，并将上面复制的三条，替换下面的内容，点击submit即可</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114142326486.png" alt="image-20211114142326486"></p>
+</li>
+<li><p>等待大概10分钟，再去cf主页面添加站点，此时可以顺利地进行托管（如果还不行，请耐心多等待一会）</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114142433552.png" alt="image-20211114142433552"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
 </search>
