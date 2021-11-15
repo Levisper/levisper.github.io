@@ -6,7 +6,7 @@
   <link href="https://erenblog.eu.org/atom.xml" rel="self"/>
   
   <link href="https://erenblog.eu.org/"/>
-  <updated>2021-11-14T07:07:52.189Z</updated>
+  <updated>2021-11-15T12:35:19.384Z</updated>
   <id>https://erenblog.eu.org/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云盘资源导航</title>
+    <link href="https://erenblog.eu.org/2021/11/15/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90%E5%AF%BC%E8%88%AA/"/>
+    <id>https://erenblog.eu.org/2021/11/15/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90%E5%AF%BC%E8%88%AA/</id>
+    <published>2021-11-15T11:03:05.000Z</published>
+    <updated>2021-11-15T12:35:19.384Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;自阿里云盘公测以后，很多资源都是通过它进行分享，包括但不限于电影，书籍，软件以及音乐等资源。&lt;/p&gt;
+&lt;p&gt;这里收集了一些网络资源的导航站点，可以很方便地找到自己所需的资源进行转存。目前阿里网盘的容量是有时间限制，如果时间到期，会要求删除多出的容量，因此一味地保存到自己账号并没有很大意义，建议将重要的资源下载到本地，再上传至其他网盘，例如onedrive，谷歌云盘等等。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/15/image-20211115194842733.png&quot; alt=&quot;image-20211115194842733&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="资源" scheme="https://erenblog.eu.org/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="网盘" scheme="https://erenblog.eu.org/tags/%E7%BD%91%E7%9B%98/"/>
+    
+  </entry>
   
   <entry>
     <title>eu.org域名托管至Cloudflare</title>
@@ -417,29 +438,6 @@
     <summary type="html">&lt;p&gt;本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。&lt;/p&gt;
 &lt;p&gt;搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/14/image-20211114222835670.png&quot; alt=&quot;image-20211114222835670&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://erenblog.eu.org/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="学习" scheme="https://erenblog.eu.org/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何提交博客到hexo</title>
-    <link href="https://erenblog.eu.org/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/"/>
-    <id>https://erenblog.eu.org/2021/06/25/%E5%A6%82%E4%BD%95%E6%8F%90%E4%BA%A4%E5%8D%9A%E5%AE%A2%E5%88%B0hexo/</id>
-    <published>2021-06-25T04:19:20.000Z</published>
-    <updated>2021-06-26T13:01:52.614Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Hello！大家好，这是我的第一条&lt;a href=&quot;https://levisper.github.io/&quot;&gt;博客&lt;/a&gt;，后续会定期更新各类教程等优质文章在博客里。欢迎大家关注我的博客，也欢迎加入&lt;a href=&quot;https://t.me/opensource_community&quot;&gt;开源社区&lt;/a&gt;和&lt;a href=&quot;https://t.me/opencfdchannel&quot;&gt;开源频道&lt;/a&gt;，更多有趣的小伙伴在等着你哦！&lt;/p&gt;
-&lt;p&gt;基于是初次搭建博客，本文将讲述如何提交博客到&lt;em&gt;&lt;strong&gt;hexo&lt;/strong&gt;&lt;/em&gt;以及删除已经发布的文章。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注：本文使用的是cmder软件进行命令操作&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
     
     
     

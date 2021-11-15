@@ -96,6 +96,57 @@
       </tags>
   </entry>
   <entry>
+    <title>阿里云盘资源导航</title>
+    <url>/2021/11/15/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90%E5%AF%BC%E8%88%AA/</url>
+    <content><![CDATA[<p>自阿里云盘公测以后，很多资源都是通过它进行分享，包括但不限于电影，书籍，软件以及音乐等资源。</p>
+<p>这里收集了一些网络资源的导航站点，可以很方便地找到自己所需的资源进行转存。目前阿里网盘的容量是有时间限制，如果时间到期，会要求删除多出的容量，因此一味地保存到自己账号并没有很大意义，建议将重要的资源下载到本地，再上传至其他网盘，例如onedrive，谷歌云盘等等。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115194842733.png" alt="image-20211115194842733"></p>
+<span id="more"></span>
+
+<hr>
+<h5 id="阿里云盘官网"><a href="#阿里云盘官网" class="headerlink" title="阿里云盘官网"></a>阿里云盘官网</h5><p><a href="https://www.aliyundrive.com/">官方版</a></p>
+<p>目前有手机APP、桌面端以及网页端，其中桌面端的体验并不好，上传以及下载都可能出现中断现象，推荐网页端以及APP使用</p>
+<h5 id="阿里云盘三方"><a href="#阿里云盘三方" class="headerlink" title="阿里云盘三方"></a>阿里云盘三方</h5><p><a href="https://github.com/liupan1890/aliyunpan">GitHub</a></p>
+<p>电脑端推荐使用小白羊版本，优化了官方版。（如担心安全性问题，请自行甄别使用）</p>
+<ul>
+<li>多账号登录、常用文件操作（新建文件夹、收藏、重命名、复制、移动、删除、详情、视频雪碧图）、在线播放原始视频、在线播放转码视频、在线预览图片、在线预览文本、在线预览 word/excel/ppt/pdf、连接到远程 Aria2 下载、上传文件、上传文件夹、批量改名、在线解压、回收站、收藏夹、分享文件、导入阿里云分享链接、缩略图列表、网盘内文件搜索。</li>
+</ul>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115195841955.png" alt="image-20211115195841955"></p>
+<hr>
+<h5 id="网站列表"><a href="#网站列表" class="headerlink" title="网站列表"></a>网站列表</h5><ol>
+<li><p><strong><a href="https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q?tab=ppx5bp">阿里云盘-长期更新-建议收藏</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202606879.png" alt="image-20211115202606879"></p>
+</li>
+<li><p><strong><a href="https://aliyunshare.cn/">阿里云盘小站</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202643282.png" alt="image-20211115202643282"></p>
+</li>
+<li><p><strong><a href="https://bbs.zhiqan.com/">奇它博客</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202715598.png" alt="image-20211115202715598"></p>
+</li>
+<li><p><strong><a href="https://aliyun.panpanr.com/">阿里云盘资源导航</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202742239.png" alt="image-20211115202742239"></p>
+</li>
+<li><p><strong><a href="https://www.alipanso.com/">阿里盘搜</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202759498.png" alt="image-20211115202759498"></p>
+</li>
+<li><p><strong><a href="https://www.panpanr.com/">阿里盘盘</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202833778.png" alt="image-20211115202833778"></p>
+</li>
+<li><p><strong><a href="https://ypfx.club/forum.php">阿里云盘资源分享</a></strong></p>
+<p><img src="https://pic.020810.xyz/images/2021/11/15/image-20211115202907899.png" alt="image-20211115202907899"></p>
+</li>
+</ol>
+<p><strong>注：以上均为网络资源，在本文编辑之时仍然有效，如遇到不可抗力，网站变迁，请自行更改收藏。如有其他补充，可以在下方评论区留言给我~</strong></p>
+<p>说在最后，善于利用网络资源，<strong>切勿传播非法资源内容！</strong></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>eu.org域名托管至Cloudflare</title>
     <url>/2021/11/14/eu.org%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E8%87%B3Cloudflare/</url>
     <content><![CDATA[<p><a href="https://nic.eu.org/">eu.org</a>是欧盟组织下面的域名，至今已有二十多年的历史。</p>
