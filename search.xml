@@ -1,101 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo+GitHub博客搭建教程</title>
-    <url>/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。</p>
-<p>搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。</p>
-<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114222835670.png" alt="image-20211114222835670"></p>
-<span id="more"></span>
-
-<hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、下载Node-js，并进行安装（详见注意事项）"><a href="#1、下载Node-js，并进行安装（详见注意事项）" class="headerlink" title="1、下载Node.js，并进行安装（详见注意事项）"></a>1、下载<a href="https://nodejs.org/en/">Node.js</a>，并进行安装（<strong>详见注意事项</strong>）</h5><blockquote>
-<p>a.选择windows安装包.msi下载</p>
-<p>b.安装过程默认C盘，中间切记要选择Add to PATH，然后点Next继续</p>
-</blockquote>
-<h5 id="2、下载Git，并进行安装"><a href="#2、下载Git，并进行安装" class="headerlink" title="2、下载Git，并进行安装"></a>2、下载<a href="https://git-scm.com/">Git</a>，并进行安装</h5><blockquote>
-<p>可自行选择安装路径，后面的安装步骤只要全部点击Next即可，无需自行配置</p>
-</blockquote>
-<h5 id="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"><a href="#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行" class="headerlink" title="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"></a>3、下载<a href="https://cmder.net/">Cmder</a>，并进行安装，后文所涉及到命令均是在Cmder里面进行运行</h5><blockquote>
-<p>下载选择Full版本</p>
-</blockquote>
-<hr>
-<h4 id="二：安装Hexo"><a href="#二：安装Hexo" class="headerlink" title="二：安装Hexo"></a>二：安装Hexo</h4><ul>
-<li><p>打开Cmder面板，分别输入以下命令（检测软件配置是否安装成功）</p>
-<blockquote>
-<p>输出了版本号，那么证明配置成功</p>
-<p>如果没有版本号，请重新安装node.js，检查是否勾选Add to Path，或者手动为node.js添加环境变量</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></li>
-<li><p>安装cnpm，输入以下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-<li><p>检测cnpm是否安装成功，输出版本号即为成功</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm -v </span><br></pre></td></tr></table></figure></li>
-<li><p>安装Hexo，输入以下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></li>
-<li><p>在电脑文件夹中新建一个文件夹来保存Hexo文件</p>
-<blockquote>
-<p>例如：D:\Blog\hexo</p>
-</blockquote>
-</li>
-<li><p>切换Cmder的目录到新建的hexo文件路径，命令如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd D:\Blog\hexo</span><br></pre></td></tr></table></figure></li>
-<li><p>执行<code>hexo init</code>命令，见注意事项</p>
-<blockquote>
-<p>上面这个命令运行到<code>Install dependencies</code>的时候，如果出现卡住情况，按<code>Ctrl + c</code>结束命令即可</p>
-</blockquote>
-</li>
-<li><p>执行<code>cnpm install</code> 命令，等待完成初始化工作后，输入<code>hexo s</code>，按住ctrl键，并单击<code>http://localhost:4000</code>，可以在本地查看预览效果了。</p>
-</li>
-<li><p>主题的话，我们选用入门级别的next主题进行配置，输入以下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure></li>
-<li><p>修改配置文件（主要是theme和language）,输入<code>ls</code>命令查看是否有_config.yml文件，再输入<code>vi _config.yml</code>进入根目录的配置文件进行修改，按 i 可以进行修改，退出修改得依次按esc键  <strong>shift加；</strong> wq，即可返回到根目录下</p>
-<blockquote>
-<p>theme栏的内容更换成<code>next</code></p>
-<p>language栏的内容更换成<code>zh-CN</code></p>
-</blockquote>
-</li>
-<li><p>输入<code>hexo s</code>预览更改后的效果</p>
-</li>
-</ul>
-<hr>
-<h4 id="三、部署在GitHub"><a href="#三、部署在GitHub" class="headerlink" title="三、部署在GitHub"></a>三、部署在GitHub</h4><ul>
-<li><p>注册好GitHub账号，并登陆进去（建议不熟悉英文的开启谷歌翻译）</p>
-</li>
-<li><p>左侧新建一个仓库，仓库的命名格式为：用户名+github.io (例如用户名为dk，则对应的仓库名字为dk.github.io)，添加仓库描述，勾选public，勾选add README，然后点击创建。</p>
-</li>
-<li><p>创建git密匙，在cmder里输入<code>ssh-keygen -t rsa -C “your_email@youremail.com“</code>（这里改成你自己的注册邮箱），连续按住回车键</p>
-</li>
-<li><p>输入<code>cat ~/.ssh/id_rsa.pub</code>，将生成的密匙复制下来<strong>（密匙以ssh-rsa开头，复制的时候要把ssh-rsa也复制上）</strong></p>
-</li>
-<li><p>进入GitHub-点击头像-setting-SSH-New SSH Key，把密匙添加进去，并保存</p>
-</li>
-<li><p>输入<code>ssh -T git@github.com</code>，会出现个<code>Are you sure you want to continue connecting (yes/no/[fingerprint])? </code>，输入yes按回车即可</p>
-</li>
-<li><p>进入GitHub，打开项目，点击code，切换到ssh，将地址复制下来</p>
-</li>
-<li><p>使用<code>vi _config.yml</code>命令，进入根目录下的_config,yml文件下进行配置，找到deploy所在地方，将地址复制在repo一栏，并将branch一栏改成main</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: git@github.com:username/username.github.io.git</span><br><span class="line">	branch: main(我们新建仓库的时候就是main，所以这里直接采用main分支)</span><br></pre></td></tr></table></figure></li>
-<li><p>退出配置文件修改，回到根目录下，执行以下命令（里面要改成自己的用户名和注册邮箱）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &#x27;yourname&#x27;(修改成github用户名)</span><br><span class="line">git config --global user.email &#x27;youremail&#x27;(修改注册github所用的邮箱)</span><br></pre></td></tr></table></figure></li>
-<li><p>再输入上传插件的命令</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure></li>
-<li><p>提交文件到GitHub仓库</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li>
-<li><p>至此Hexo博客部署完成，打开GitHub你创建的那个项目，点击Settings，往下滑找到Github pages，点击none 选择main branch，之后你会得到一个地址，这个地址就是你的博客网址了。</p>
-</li>
-</ul>
-<hr>
-<p> <strong>申明：本文是对<a href="https://aegisprogram.github.io/2021/06/24/How-to-build-your-hexo-blog/#more">ellen的hexo教程</a>进行个人的二次整理，并非原创！</strong></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阿里云盘资源导航</title>
     <url>/2021/11/15/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90%E5%AF%BC%E8%88%AA/</url>
     <content><![CDATA[<p>自阿里云盘公测以后，很多资源都是通过它进行分享，包括但不限于电影，书籍，软件以及音乐等资源。</p>
@@ -1236,6 +1141,101 @@
 <li>出现部署问题，请自行检查是否出现哪一步的疏忽遗漏，如第一次没有成功，请重新部署！也可加入<a href="https://t.me/opensource_community">开源社区</a>咨询相关问题。</li>
 <li>本教程参考开发者Xtao的<a href="https://github.com/Xtao-Labs/PagerMaid-Modify">PagerMaid</a>开源项目内容，如有更多问题可以联系开发者进行沟通。</li>
 </ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+GitHub博客搭建教程</title>
+    <url>/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。</p>
+<p>搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。</p>
+<p><img src="https://pic.020810.xyz/images/2021/11/14/image-20211114222835670.png" alt="image-20211114222835670"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、下载Node-js，并进行安装（详见注意事项）"><a href="#1、下载Node-js，并进行安装（详见注意事项）" class="headerlink" title="1、下载Node.js，并进行安装（详见注意事项）"></a>1、下载<a href="https://nodejs.org/en/">Node.js</a>，并进行安装（<strong>详见注意事项</strong>）</h5><blockquote>
+<p>a.选择windows安装包.msi下载</p>
+<p>b.安装过程默认C盘，中间切记要选择Add to PATH，然后点Next继续</p>
+</blockquote>
+<h5 id="2、下载Git，并进行安装"><a href="#2、下载Git，并进行安装" class="headerlink" title="2、下载Git，并进行安装"></a>2、下载<a href="https://git-scm.com/">Git</a>，并进行安装</h5><blockquote>
+<p>可自行选择安装路径，后面的安装步骤只要全部点击Next即可，无需自行配置</p>
+</blockquote>
+<h5 id="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"><a href="#3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行" class="headerlink" title="3、下载Cmder，并进行安装，后文所涉及到命令均是在Cmder里面进行运行"></a>3、下载<a href="https://cmder.net/">Cmder</a>，并进行安装，后文所涉及到命令均是在Cmder里面进行运行</h5><blockquote>
+<p>下载选择Full版本</p>
+</blockquote>
+<hr>
+<h4 id="二：安装Hexo"><a href="#二：安装Hexo" class="headerlink" title="二：安装Hexo"></a>二：安装Hexo</h4><ul>
+<li><p>打开Cmder面板，分别输入以下命令（检测软件配置是否安装成功）</p>
+<blockquote>
+<p>输出了版本号，那么证明配置成功</p>
+<p>如果没有版本号，请重新安装node.js，检查是否勾选Add to Path，或者手动为node.js添加环境变量</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></li>
+<li><p>安装cnpm，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>检测cnpm是否安装成功，输出版本号即为成功</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm -v </span><br></pre></td></tr></table></figure></li>
+<li><p>安装Hexo，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li><p>在电脑文件夹中新建一个文件夹来保存Hexo文件</p>
+<blockquote>
+<p>例如：D:\Blog\hexo</p>
+</blockquote>
+</li>
+<li><p>切换Cmder的目录到新建的hexo文件路径，命令如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd D:\Blog\hexo</span><br></pre></td></tr></table></figure></li>
+<li><p>执行<code>hexo init</code>命令，见注意事项</p>
+<blockquote>
+<p>上面这个命令运行到<code>Install dependencies</code>的时候，如果出现卡住情况，按<code>Ctrl + c</code>结束命令即可</p>
+</blockquote>
+</li>
+<li><p>执行<code>cnpm install</code> 命令，等待完成初始化工作后，输入<code>hexo s</code>，按住ctrl键，并单击<code>http://localhost:4000</code>，可以在本地查看预览效果了。</p>
+</li>
+<li><p>主题的话，我们选用入门级别的next主题进行配置，输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure></li>
+<li><p>修改配置文件（主要是theme和language）,输入<code>ls</code>命令查看是否有_config.yml文件，再输入<code>vi _config.yml</code>进入根目录的配置文件进行修改，按 i 可以进行修改，退出修改得依次按esc键  <strong>shift加；</strong> wq，即可返回到根目录下</p>
+<blockquote>
+<p>theme栏的内容更换成<code>next</code></p>
+<p>language栏的内容更换成<code>zh-CN</code></p>
+</blockquote>
+</li>
+<li><p>输入<code>hexo s</code>预览更改后的效果</p>
+</li>
+</ul>
+<hr>
+<h4 id="三、部署在GitHub"><a href="#三、部署在GitHub" class="headerlink" title="三、部署在GitHub"></a>三、部署在GitHub</h4><ul>
+<li><p>注册好GitHub账号，并登陆进去（建议不熟悉英文的开启谷歌翻译）</p>
+</li>
+<li><p>左侧新建一个仓库，仓库的命名格式为：用户名+github.io (例如用户名为dk，则对应的仓库名字为dk.github.io)，添加仓库描述，勾选public，勾选add README，然后点击创建。</p>
+</li>
+<li><p>创建git密匙，在cmder里输入<code>ssh-keygen -t rsa -C “your_email@youremail.com“</code>（这里改成你自己的注册邮箱），连续按住回车键</p>
+</li>
+<li><p>输入<code>cat ~/.ssh/id_rsa.pub</code>，将生成的密匙复制下来<strong>（密匙以ssh-rsa开头，复制的时候要把ssh-rsa也复制上）</strong></p>
+</li>
+<li><p>进入GitHub-点击头像-setting-SSH-New SSH Key，把密匙添加进去，并保存</p>
+</li>
+<li><p>输入<code>ssh -T git@github.com</code>，会出现个<code>Are you sure you want to continue connecting (yes/no/[fingerprint])? </code>，输入yes按回车即可</p>
+</li>
+<li><p>进入GitHub，打开项目，点击code，切换到ssh，将地址复制下来</p>
+</li>
+<li><p>使用<code>vi _config.yml</code>命令，进入根目录下的_config,yml文件下进行配置，找到deploy所在地方，将地址复制在repo一栏，并将branch一栏改成main</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: git@github.com:username/username.github.io.git</span><br><span class="line">	branch: main(我们新建仓库的时候就是main，所以这里直接采用main分支)</span><br></pre></td></tr></table></figure></li>
+<li><p>退出配置文件修改，回到根目录下，执行以下命令（里面要改成自己的用户名和注册邮箱）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &#x27;yourname&#x27;(修改成github用户名)</span><br><span class="line">git config --global user.email &#x27;youremail&#x27;(修改注册github所用的邮箱)</span><br></pre></td></tr></table></figure></li>
+<li><p>再输入上传插件的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure></li>
+<li><p>提交文件到GitHub仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li>
+<li><p>至此Hexo博客部署完成，打开GitHub你创建的那个项目，点击Settings，往下滑找到Github pages，点击none 选择main branch，之后你会得到一个地址，这个地址就是你的博客网址了。</p>
+</li>
+</ul>
+<hr>
+<p> <strong>申明：本文是对<a href="https://aegisprogram.github.io/2021/06/24/How-to-build-your-hexo-blog/#more">ellen的hexo教程</a>进行个人的二次整理，并非原创！</strong></p>
 ]]></content>
       <categories>
         <category>技术</category>
