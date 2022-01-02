@@ -23,7 +23,25 @@
 <p>那么安装完这个<code>虚拟系统</code>之后，一切做法就和<a href="https://github.com/Xtao-Labs/PagerMaid-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3">官方文档</a>一样啦！</p>
 <p><img src="https://pic.020810.xyz/images/2022/01/02/251742589943395d2f21d5717b729f.jpg" alt="Ubuntu deve continuar dando suporte a aplicativos de arquitetura 32-bits -  TecMundo"></p>
 <hr>
-<h4 id="三：安装流程"><a href="#三：安装流程" class="headerlink" title="三：安装流程"></a>三：安装流程</h4><h5 id="1、安装Ubuntu虚拟容器系统"><a href="#1、安装Ubuntu虚拟容器系统" class="headerlink" title="1、安装Ubuntu虚拟容器系统"></a>1、安装Ubuntu虚拟容器系统</h5><ul>
+<h4 id="三：安装流程"><a href="#三：安装流程" class="headerlink" title="三：安装流程"></a>三：安装流程</h4><h5 id="脚本安装（推荐）"><a href="#脚本安装（推荐）" class="headerlink" title="脚本安装（推荐）"></a><strong>脚本安装（推荐）</strong></h5><p>推荐使用脚本安装，请参考：<a href="https://github.com/wzk0/pgm-Termux">pgm-Termux脚本</a></p>
+<p><strong>脚本使用方法：</strong></p>
+<p>首先在Termux安装git或wget以获取此脚本</p>
+<ul>
+<li>首先在Termux安装git或wget以获取此脚本</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/wzk0/pgm-Termux.git</span><br><span class="line">wget https://raw.githubusercontent.com/wzk0/pgm-Termux/main/pgm.py</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>需安装python以执行脚本</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 pgm.py</span><br></pre></td></tr></table></figure>
+
+<p><strong>关键点：</strong></p>
+<ul>
+<li>进入容器前后是两个不同的环境，所以进入前后必须分别获取一遍脚本</li>
+</ul>
+<hr>
+<h5 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a><strong>手动安装</strong></h5><h5 id="1、安装Ubuntu虚拟容器系统"><a href="#1、安装Ubuntu虚拟容器系统" class="headerlink" title="1、安装Ubuntu虚拟容器系统"></a>1、安装Ubuntu虚拟容器系统</h5><ul>
 <li>输入指令更新pkg包管理器:</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pkg update</span><br><span class="line">pkg upgrade</span><br></pre></td></tr></table></figure>
