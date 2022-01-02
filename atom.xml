@@ -6,7 +6,7 @@
   <link href="https://erenblog.eu.org/atom.xml" rel="self"/>
   
   <link href="https://erenblog.eu.org/"/>
-  <updated>2021-11-15T12:35:19.384Z</updated>
+  <updated>2022-01-02T05:55:29.427Z</updated>
   <id>https://erenblog.eu.org/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Termux无服务器运行PagerMaid-Modify</title>
+    <link href="https://erenblog.eu.org/2022/01/02/Termux%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CPagerMaid-Modify/"/>
+    <id>https://erenblog.eu.org/2022/01/02/Termux%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CPagerMaid-Modify/</id>
+    <published>2022-01-02T04:57:01.000Z</published>
+    <updated>2022-01-02T05:55:29.427Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;PagerMaid-Modify&lt;/strong&gt;是一个非常强大的Telegram辅助工具，关于其部署，有多种选择。之前也写过一篇《&lt;a href=&quot;https://erenblog.eu.org/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/&quot;&gt;Railway上部署pagermaid&lt;/a&gt;》，但Railway后续更新了政策，为防止滥用而禁止了userbot的部署。&lt;/p&gt;
+&lt;p&gt;今天，我们介绍一个利用&lt;strong&gt;Termux&lt;/strong&gt;安装并部署的方法，免费且无需电脑，单纯用手机即可畅玩&lt;strong&gt;PagerMaid&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2022/01/02/image-20220102131402818.png&quot; alt=&quot;image-20220102131402818&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://erenblog.eu.org/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="学习" scheme="https://erenblog.eu.org/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里云盘资源导航</title>
@@ -151,7 +172,7 @@
     <link href="https://erenblog.eu.org/2021/10/23/%E5%93%AA%E5%90%92%E9%9D%A2%E6%9D%BF%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1/"/>
     <id>https://erenblog.eu.org/2021/10/23/%E5%93%AA%E5%90%92%E9%9D%A2%E6%9D%BF%E7%9B%91%E6%8E%A7%E6%9C%8D%E5%8A%A1/</id>
     <published>2021-10-23T14:39:00.000Z</published>
-    <updated>2021-10-26T12:12:24.258Z</updated>
+    <updated>2022-01-02T05:58:18.441Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/naiba/nezha&quot;&gt;&lt;strong&gt;哪吒监控&lt;/strong&gt;&lt;/a&gt;是一款开源的服务器监控程序，功能齐全，UI美观，有多款主题可选。&lt;/p&gt;
@@ -417,27 +438,6 @@
     
     <summary type="html">&lt;p&gt;Pagermaid 是一个应用在 Telegram 账号上的&lt;a href=&quot;https://github.com/Xtao-Labs/PagerMaid-Modify&quot;&gt;开源机器人项目&lt;/a&gt;。电报个人账号通过配合Pagermaid程序，可以实现很多实用快捷操作，例如收集贴纸，谷歌搜索，删除个人消息等等。&lt;/p&gt;
 &lt;p&gt;它目前可以通过两种方式部署：一种方法是在VPS操作，前提是自己拥有一台服务器，不论是国内的还是国外的；另一种则是免于购买服务器，利用&lt;strong&gt;GitHub&lt;/strong&gt;账号，并结合免费的&lt;strong&gt;Railway&lt;/strong&gt;云服务器，可以进行搭建。后者的出现，也是开发者为了推广该项目进行的新尝试。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://erenblog.eu.org/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="学习" scheme="https://erenblog.eu.org/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo+GitHub博客搭建教程</title>
-    <link href="https://erenblog.eu.org/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-    <id>https://erenblog.eu.org/2021/06/27/Hexo-GitHub%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</id>
-    <published>2021-06-27T13:34:52.000Z</published>
-    <updated>2021-11-15T12:38:15.956Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;本文讲述的Hexo博客搭建主要是配合GitHub来进行部署，不需要购买任何服务器。&lt;/p&gt;
-&lt;p&gt;搭建大致分为三个流程：准备工作、安装Hexo以及部署在GitHub，下面介绍详细流程。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pic.020810.xyz/images/2021/11/14/image-20211114222835670.png&quot; alt=&quot;image-20211114222835670&quot;&gt;&lt;/p&gt;</summary>
     
     
     

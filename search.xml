@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Termux无服务器运行PagerMaid-Modify</title>
+    <url>/2022/01/02/Termux%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CPagerMaid-Modify/</url>
+    <content><![CDATA[<p><strong>PagerMaid-Modify</strong>是一个非常强大的Telegram辅助工具，关于其部署，有多种选择。之前也写过一篇《<a href="https://erenblog.eu.org/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/">Railway上部署pagermaid</a>》，但Railway后续更新了政策，为防止滥用而禁止了userbot的部署。</p>
+<p>今天，我们介绍一个利用<strong>Termux</strong>安装并部署的方法，免费且无需电脑，单纯用手机即可畅玩<strong>PagerMaid</strong>！</p>
+<p><img src="https://pic.020810.xyz/images/2022/01/02/image-20220102131402818.png" alt="image-20220102131402818"></p>
+<span id="more"></span>
+
+<hr>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、API-ID、API-HASH获取"><a href="#1、API-ID、API-HASH获取" class="headerlink" title="1、API_ID、API_HASH获取"></a>1、<strong>API_ID</strong>、<strong>API_HASH</strong>获取</h5><p>自行访问<a href="https://my.telegram.org/">API官网</a>申请获取，得到<strong>API_ID</strong>和第四个参数<strong>API_HASH</strong>，并记录下来以备后用</p>
+<h5 id="2、手机安装Termux"><a href="#2、手机安装Termux" class="headerlink" title="2、手机安装Termux"></a>2、手机安装Termux</h5><p>请选择<a href="https://f-droid.org/repo/com.termux_117.apk">F-droid商店版</a>，千万不要下载谷歌商店版，版本太老，使用起来非常不方便</p>
+<hr>
+<h4 id="二：部署思路"><a href="#二：部署思路" class="headerlink" title="二：部署思路"></a>二：部署思路</h4><blockquote>
+<p>Tips:如果你对Linux比较熟悉的话，只需看这部分思路即可完成.</p>
+</blockquote>
+<p>首先，官方给出了<code>PagerMaid-Modify</code>的<code>Ubuntu安装方法</code>，</p>
+<p>那么我们只需拥有一个Ubuntu系统即可.</p>
+<p>而Termux虽然默认有apt包管理器，但是被阉割太严重，导致无法正常安装<code>PagerMaid-Modify</code>的所有依赖.</p>
+<p>况且，最重要的一点是，通常大部分人的手机没有root，因此Termux也就无法使用sudo等这些管理员指令.</p>
+<p>所以，我们需要的是一个<code>虚拟系统</code>，里面有原生的Ubuntu，以及<code>虚拟的root用户</code>.</p>
+<p>那么安装完这个<code>虚拟系统</code>之后，一切做法就和<a href="https://github.com/Xtao-Labs/PagerMaid-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3">官方文档</a>一样啦！</p>
+<p><img src="https://pic.020810.xyz/images/2022/01/02/251742589943395d2f21d5717b729f.jpg" alt="Ubuntu deve continuar dando suporte a aplicativos de arquitetura 32-bits -  TecMundo"></p>
+<hr>
+<h4 id="三：安装流程"><a href="#三：安装流程" class="headerlink" title="三：安装流程"></a>三：安装流程</h4><h5 id="1、安装Ubuntu虚拟容器系统"><a href="#1、安装Ubuntu虚拟容器系统" class="headerlink" title="1、安装Ubuntu虚拟容器系统"></a>1、安装Ubuntu虚拟容器系统</h5><ul>
+<li>输入指令更新pkg包管理器:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pkg update</span><br><span class="line">pkg upgrade</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>输入指令以安装<code>Ubuntu虚拟系统</code>:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pkg install wget openssl-tool proot -y &amp;&amp; hash -r &amp;&amp; wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh &amp;&amp; bash ubuntu.sh</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>时间较长，过程中有<code>Y/n</code>并且卡住的时候请输入<code>y</code></p>
+</blockquote>
+<ul>
+<li>进入<code>Ubuntu虚拟系统</code>:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">./start-ubuntu.sh</span><br></pre></td></tr></table></figure>
+
+<h5 id="2、装PagerMaid-Modify"><a href="#2、装PagerMaid-Modify" class="headerlink" title="2、装PagerMaid-Modify"></a>2、装PagerMaid-Modify</h5><blockquote>
+<p>Warn:这一步是在进入Ubuntu虚拟系统后进行的</p>
+</blockquote>
+<ul>
+<li>输入指令更新apt包管理器:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>输入指令安装<code>git</code>，<code>Python</code>，<code>pip3</code>，<code>nano</code>:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt install git</span><br><span class="line">apt install python</span><br><span class="line">apt install python3-pip</span><br><span class="line">apt install nano</span><br></pre></td></tr></table></figure>
+
+<h5 id="3、安装依赖及可选软件包"><a href="#3、安装依赖及可选软件包" class="headerlink" title="3、安装依赖及可选软件包"></a>3、安装依赖及可选软件包</h5><blockquote>
+<p>Warn:这一步是在进入Ubuntu虚拟系统后进行的</p>
+</blockquote>
+<ul>
+<li>输入指令clone仓库(<strong>必选</strong>):</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/xtaodada/PagerMaid-Modify.git pagermaid &amp;&amp; cd pagermaid</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li><p>输入指令安装软件包(<code>可选</code>):</p>
+<p>图片处理:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install imagemagick -y</span><br></pre></td></tr></table></figure>
+
+<p>系统信息:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install software-properties-common  &amp;&amp; add-apt-repository ppa:dawidd0811/neofetch &amp;&amp; apt-get update &amp;&amp; apt-get install neofetch</span><br></pre></td></tr></table></figure>
+
+<p>二维码处理:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install libzbar-dev -y</span><br></pre></td></tr></table></figure>
+
+<p>光学识别:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install tesseract-ocr tesseract-ocr-all -y</span><br></pre></td></tr></table></figure>
+
+<p>任务执行:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install redis-server -y</span><br></pre></td></tr></table></figure></li>
+<li><p>安装依赖(<strong>必选</strong>):</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip3 install -r requirements.txt</span><br></pre></td></tr></table></figure></li>
+<li><p>修改并写入配置(<strong>必选</strong>):</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cp config.gen.yml config.yml</span><br><span class="line"></span><br><span class="line">nano config.yml</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>复制<code>api_id</code>和<code>api_hash</code>值，填入<code>api_key</code>和<code>api_hash</code></p>
+</blockquote>
+<blockquote>
+<p>Tips: <code>Ctrl O</code>保存之后，会提示是否修改文件名，直接回车一次即可，然后再<code>Ctrl X</code>，也可以直接<code>Ctrl X</code>，之后会提示是否保存，输入y即可.</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="4、运行"><a href="#4、运行" class="headerlink" title="4、运行"></a>4、运行</h5><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python3 -m pagermaid</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Warn:这一条指令是在<code>PagerMaid-Modify</code>的根目录执行的</p>
+<p>首次会提示登陆账号，如果有二步验证密码输入，密码不会显示出来</p>
+</blockquote>
+<hr>
+<h4 id="gt-gt-本文转载自便当的博客"><a href="#gt-gt-本文转载自便当的博客" class="headerlink" title="&gt; &gt; 本文转载自便当的博客"></a>&gt; &gt; <strong>本文转载自<a href="https://wzk0.github.io/pm/">便当的博客</a></strong></h4><p><img src="https://pic.020810.xyz/images/2022/01/02/image-20220102135436901.png" alt="image-20220102135436901"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>阿里云盘资源导航</title>
     <url>/2021/11/15/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98%E8%B5%84%E6%BA%90%E5%AF%BC%E8%88%AA/</url>
     <content><![CDATA[<p>自阿里云盘公测以后，很多资源都是通过它进行分享，包括但不限于电影，书籍，软件以及音乐等资源。</p>
@@ -406,7 +514,7 @@
 <p>点击配置文件按钮，修改反代配置文件</p>
 <p><img src="https://pic.020810.xyz/images/2021/10/24/image-20211024155110976.png" alt="image-20211024155110976"></p>
 <p>替换代码:</p>
-<figure class="highlight plaintext"><figcaption><span>/</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    proxy_pass http://127.0.0.1:8008;</span><br><span class="line">    proxy_set_header Host $host;</span><br><span class="line">&#125;</span><br><span class="line">location /ws</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass http://127.0.0.1:8008;</span><br><span class="line">    proxy_http_version 1.1;</span><br><span class="line">    proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">    proxy_set_header Connection &quot;Upgrade&quot;;</span><br><span class="line">    proxy_set_header Host $host;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">location /</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass http://127.0.0.1:8008;</span><br><span class="line">    proxy_set_header Host $host;</span><br><span class="line">&#125;</span><br><span class="line">location /ws</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass http://127.0.0.1:8008;</span><br><span class="line">    proxy_http_version 1.1;</span><br><span class="line">    proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">    proxy_set_header Connection &quot;Upgrade&quot;;</span><br><span class="line">    proxy_set_header Host $host;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>完成后，可以通过域名访问哪吒面板网页端了</p>
 <p>打开浏览器，访问刚才在<a href="https://www.kzlwb.xyz/wp-content/themes/begin-lts/inc/go.php?url=https://www.bt.cn/?invite_code=MV9va2ZhZXY=">宝塔面板</a>中创建站点的A域名，点击又上角的登录按钮，以GitHub账号登录。</p>
