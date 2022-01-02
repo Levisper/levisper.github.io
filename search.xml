@@ -52,7 +52,7 @@
 <ul>
 <li>输入指令安装<code>git</code>，<code>Python</code>，<code>pip3</code>，<code>nano</code>:</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt install git</span><br><span class="line">apt install python</span><br><span class="line">apt install python3-pip</span><br><span class="line">apt install nano</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt install git</span><br><span class="line">apt install python3</span><br><span class="line">apt install python3-pip</span><br><span class="line">apt install nano</span><br></pre></td></tr></table></figure>
 
 <h5 id="3、安装依赖及可选软件包"><a href="#3、安装依赖及可选软件包" class="headerlink" title="3、安装依赖及可选软件包"></a>3、安装依赖及可选软件包</h5><blockquote>
 <p>Warn:这一步是在进入Ubuntu虚拟系统后进行的</p>
