@@ -9,7 +9,7 @@
 <span id="more"></span>
 
 <hr>
-<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、API-ID、API-HASH获取"><a href="#1、API-ID、API-HASH获取" class="headerlink" title="1、API_ID、API_HASH获取"></a>1、<strong>API_ID</strong>、<strong>API_HASH</strong>获取</h5><p>自行访问<a href="https://my.telegram.org/">API官网</a>申请获取，得到<strong>API_ID</strong>和第四个参数<strong>API_HASH</strong>，并记录下来以备后用</p>
+<h4 id="一：准备工作"><a href="#一：准备工作" class="headerlink" title="一：准备工作"></a>一：准备工作</h4><h5 id="1、API-ID、API-HASH获取"><a href="#1、API-ID、API-HASH获取" class="headerlink" title="1、API_ID、API_HASH获取"></a>1、<strong>API_ID</strong>、<strong>API_HASH</strong>获取</h5><p>自行访问<a href="https://my.telegram.org/">API官网</a>申请获取，得到<strong>API_ID</strong>和<strong>API_HASH</strong>，并记录下来以备后用</p>
 <h5 id="2、手机安装Termux"><a href="#2、手机安装Termux" class="headerlink" title="2、手机安装Termux"></a>2、手机安装Termux</h5><p>请选择<a href="https://f-droid.org/repo/com.termux_117.apk">F-droid商店版</a>，千万不要下载谷歌商店版，版本太老，使用起来非常不方便</p>
 <hr>
 <h4 id="二：部署思路"><a href="#二：部署思路" class="headerlink" title="二：部署思路"></a>二：部署思路</h4><blockquote>
@@ -23,16 +23,19 @@
 <p>那么安装完这个<code>虚拟系统</code>之后，一切做法就和<a href="https://github.com/Xtao-Labs/PagerMaid-Modify/wiki/Ubuntu-16.04-%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3">官方文档</a>一样啦！</p>
 <p><img src="https://pic.020810.xyz/images/2022/01/02/251742589943395d2f21d5717b729f.jpg" alt="Ubuntu deve continuar dando suporte a aplicativos de arquitetura 32-bits -  TecMundo"></p>
 <hr>
-<h4 id="三：安装流程"><a href="#三：安装流程" class="headerlink" title="三：安装流程"></a>三：安装流程</h4><h5 id="脚本安装（推荐）"><a href="#脚本安装（推荐）" class="headerlink" title="脚本安装（推荐）"></a><strong>脚本安装（推荐）</strong></h5><p>推荐使用脚本安装，请参考：<a href="https://github.com/wzk0/pgm-Termux">pgm-Termux脚本</a></p>
-<p><strong>脚本使用方法：</strong></p>
-<p>首先在Termux安装git或wget以获取此脚本</p>
+<h4 id="三：安装流程"><a href="#三：安装流程" class="headerlink" title="三：安装流程"></a>三：安装流程</h4><h5 id="脚本安装（推荐）"><a href="#脚本安装（推荐）" class="headerlink" title="脚本安装（推荐）"></a><strong>脚本安装（推荐）</strong></h5><p>推荐使用脚本安装，请参考：<a href="https://github.com/wzk0/pgm-Termux">pgm-Termux脚本</a>，下面介绍脚本使用方法：</p>
 <ul>
-<li>首先在Termux安装git或wget以获取此脚本</li>
+<li>首先在Termux安装wget和python:</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/wzk0/pgm-Termux.git</span><br><span class="line">wget https://raw.githubusercontent.com/wzk0/pgm-Termux/main/pgm.py</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt upgrade</span><br><span class="line">apt install wget</span><br><span class="line">apt install python</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>需安装python以执行脚本</li>
+<li>然后获取该脚本:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/wzk0/pgm-Termux/main/pgm.py</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行:</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python3 pgm.py</span><br></pre></td></tr></table></figure>
 

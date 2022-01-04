@@ -6,7 +6,7 @@
   <link href="https://erenblog.eu.org/atom.xml" rel="self"/>
   
   <link href="https://erenblog.eu.org/"/>
-  <updated>2022-01-02T06:26:43.397Z</updated>
+  <updated>2022-01-04T06:02:35.050Z</updated>
   <id>https://erenblog.eu.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://erenblog.eu.org/2022/01/02/Termux%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CPagerMaid-Modify/"/>
     <id>https://erenblog.eu.org/2022/01/02/Termux%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8CPagerMaid-Modify/</id>
     <published>2022-01-02T04:57:01.000Z</published>
-    <updated>2022-01-02T06:26:43.397Z</updated>
+    <updated>2022-01-04T06:02:35.050Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;PagerMaid-Modify&lt;/strong&gt;是一个非常强大的Telegram辅助工具，关于其部署，有多种选择。之前也写过一篇《&lt;a href=&quot;https://erenblog.eu.org/2021/09/07/Railway%E4%B8%8A%E9%83%A8%E7%BD%B2pagermaid/&quot;&gt;Railway上部署pagermaid&lt;/a&gt;》，但Railway后续更新了政策，为防止滥用而禁止了userbot的部署。&lt;/p&gt;
